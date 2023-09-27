@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Leishmaniose</title>
+  <link href="leishmaniose.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="./img/logotcc.png">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+</head>
+
+<body id=“top”>
+
+  <header class="cabecalho">
+    <div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="side-bar active">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="#intro"><i class="fas fa-desktop"></i>Introdução</a></div>
+          <div class="item"><a href="#agente"><i class="fas fa-notes-medical"></i>Agente etiológico</a></div>
+          <div class="item"><a href="#vetor"><i class="fas fa-syringe"></i>Vetor</a></div> <!--se tiver-->
+          <div class="item"><a href="#transmissao"><i class="fas fa-vial"></i>Transmissão</a></div>
+          <div class="item"><a href="#ciclo"><i class="fas fa-hospital"></i>Ciclo da doença</a></div>
+          <div class="item"><a href="#sintomas"><i class="fas fa-stethoscope"></i>Sintomas</a></div>
+          <div class="item"><a href="#tratamento"><i class="fas fa-capsules"></i>Tratamento</a></div>
+          <div class="item"><a href="#medidas"><i class="fas fa-thumbtack"></i>Medidas profiláticas</a></div>
+          
+          <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Homepage</a></div>
+          <div class="item"><a href="#"><i class="fas fa-microscope"></i>Microscópio virtual</a></div>
+          <div class="item"><a href="#"><i class="fas fa-chart-line"></i>Dados epidemiológicos</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="titulo-header">Leishmaniose</p>
+    </div>
+
+    <div>
+      <button type="button" id="btnAumentar">A+</button>
+    </div>
+
+    <div>
+      <button type="button" id="btnDiminuir">A-</button>
+    </div>
+    
+    <div>
+      <input type="checkbox" name="change-theme" id="change-theme" />
+      <label for="change-theme">
+        <i class="bi bi-sun"></i>
+        <i class="bi bi-moon"></i
+      ></label>
+    </div>
+
+    
+  </header>
+
+
+   <!--CAPA-->
+  <div class="fundo">
+    <div class="header-content">
+      <h1>LEISHMANIOSE</h1>
+      <div class="line"></div>
+    </div>
+  </div>
+
+
+      <!-- LIBRAS -->
+
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+  
+
+
+  
+
+
+
+  <main>
+      <article>
+        
+        
+    <!--INTRODUÇÃO-->
+    <section class="section about" id="intro" aria-labelledby="about-label-2">
+      <div class="container">
+
+        <figure class="about-banner order-1">
+          <img src="./img/intro.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100">
+            <br>
+            <p class="about-subtitle" id="about-label-1"> <strong>Fonte:</strong> Blog da comunicação</p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Bem vindos!</p>
+          <h2 class="h2 section-title">Conheça a leishmaniose:</h2>
+
+          <div class="item-content">
+            <h3 class="h4 item-title"></h3>
+
+            <p class="item-text text">
+            A leishmaniose é uma protozoose (doença causada por protozoário) e é encontrada 
+            principalmente nas regiões tropicais e subtropicais. Essa doença ocorre em 
+            muitas áreas, como países da <strong> América Latina, África, Oriente Médio e Ásia</strong>. 
+            </p>
+            <br>
+            <p class="item-text text">
+             Existem três formas de leishmaniose: <strong>Cutânea</strong>, <strong>Visceral</strong> e 
+             <strong>Mucocutânea</strong>. O nosso objeto de estudo é a leishmaniose cutânea, também conhecida 
+             como <strong>Tegumentar</strong>, que é a forma mais comum da doença. No Brasil, é considerada a Semana Nacional 
+             de Controle e Combate à Leishmaniose na semana que inclui o dia 10 de agosto.
+
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+      
+
+
+
+
+      <!-- 
+        - AGENTES ETIOLÓGICOS
+      -->
+
+      <section class="section doctor" id="agente" style="background-image: url('./assets/images/service-bg.jpg')"
+      aria-labelledby="doctor-label">
+      <div class="container">
+
+        <h2 class="h2 section-title" id="doctor-label">Agentes etiológicos</h2>
+
+        <p class="section-text text">
+          Existem diferentes espécies do protozoário do gênero Leishmania, responsável por causar a doença, e cada uma é associada a diferentes formas clínicas na leishmaniose. Conheça algumas dessas espécies:
+        </p>
+
+        <ul class="grid-list">
+
+          <li>
+            <div class="doctor-card">
+
+              <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                <img src="./img/leishmania-amazonensis.jpg" width="350" height="360" loading="lazy"
+                  alt="Leishmania amazonensis" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h4 card-title">Leishmania amazonensis</h3>
+
+                <button class="collapsible">Leia mais</button>
+                <div class="content2">
+                  <div class="card-text text">
+                    <p>
+                      <strong>Reino:</strong> Protista <br>
+                      <strong>Filo:</strong> Sarcomastigophora <br>
+                      <strong>Classe:</strong> Zoomastigophorea <br>
+                      <strong>Ordem:</strong> Kinetoplastida <br>
+                      <strong>Família:</strong> Trypanosomatidae <br>
+                      <strong>Gênero:</strong> Leishmania <br>
+                      <strong>Espécie:</strong> Leishmania amazonensis
+                    </p>
+                    <br>
+                    <p><strong>Fonte:</strong> <br> NEKKEN Bio-Resource Center</p>
+                  </div>
+                </div>
+                
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="doctor-card">
+
+              <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                <img src="./img/leishmania-guyanensis.jpg" width="350" height="360" loading="lazy"
+                  alt="Leishmania guyanensis" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h4 card-title">Leishmania guyanensis</h3>
+
+                <button class="collapsible">Leia mais</button>
+                <div class="content2">
+                  <div class="card-text text">
+                    <p>
+                      <strong>Reino:</strong> Protista <br>
+                      <strong>Filo:</strong> Sarcomastigophora <br>
+                      <strong>Classe:</strong> Zoomastigophorea <br>
+                      <strong>Ordem:</strong> Kinetoplastida <br>
+                      <strong>Família:</strong> Trypanosomatidae <br>
+                      <strong>Gênero:</strong> Leishmania <br>
+                      <strong>Espécie:</strong> Leishmania guyanensis
+                    </p>
+                    <br>
+                    <p><strong>Fonte:</strong> <br> CDC/ Dr. Mae Melvin</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="doctor-card">
+
+              <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                <img src="./img/leishmania-braziliensis.png" width="350" height="360" loading="lazy"
+                  alt="Leishmania braziliensis" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h4 card-title">Leishmania braziliensis</h3>
+
+                <button class="collapsible">Leia mais</button>
+                <div class="content2">
+                  <div class="card-text text">
+                    <p>
+                      <strong>Reino:</strong> Protista <br>
+                      <strong>Filo:</strong> Sarcomastigophora <br>
+                      <strong>Classe:</strong> Zoomastigophorea <br>
+                      <strong>Ordem:</strong> Kinetoplastida <br>
+                      <strong>Família:</strong> Trypanosomatidae <br>
+                      <strong>Gênero:</strong> Leishmania <br>
+                      <strong>Espécie:</strong> Leishmania braziliensis
+                    </p>
+                    <br>
+                    <p><strong>Fonte:</strong> <br> LIN/UFG</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+
+
+<!-- 
+      - #VETOR DA DOENÇA
+    -->
+
+    <section class="section about" id="vetor" aria-labelledby="about-label-1">
+      <div class="container">
+        
+
+        <figure class="about-banner">
+          <img src="./img/vetor-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100">
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Ray Wilson</p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Vetor da doença</p>
+          <h2 class="h2 section-title">Lutzomyia longipalpis</h2>
+
+          <p class="section-text text">
+            <strong>Reino:</strong>  Animalia  <br>           
+            <strong>Filo:</strong> Arthropoda  <br>
+            <strong>Classe:</strong> Insecta  <br>
+            <strong>Ordem:</strong> Diptera  <br>
+            <strong>Família:</strong> Psychodidae <br>
+            <strong>Sub-família:</strong> Phlebotominae<br>
+            <strong>Gênero:</strong> Lutzomyia <br>
+            <strong>Espécie:</strong> Lutzomyia longipalpis
+
+          </p>
+
+          <ul class="about-list">
+
+           
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/transm1.png" width="80" height="80" loading="lazy"
+                  alt="Wash Your Hands For 20sec">
+              </figure>
+
+              <div class="item-content">
+                <p class="item-text text">
+                  A doença é transmitida pelo inseto conhecido como "mosquito-palha" ou "birigui", várias espécies desse flebotomíneo, que são do gênero Lutzomyia, podem transmitir a leishmaniose cutânea. 
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- 
+        - TRANSMISSÃO (about)
+      -->
+
+      <section class="section about" id="transmissao" aria-labelledby="about-label-2">
+        <div class="container">
+
+          <figure class="about-banner order-1">
+            <img src="./img/transm-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+              class="w-100">
+              <br>
+              <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Rádio Gazeta </p>
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">Transmissão </h2>
+
+            <p class="section-text text">
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/transm1.png" width="80" height="80" loading="lazy"
+                    alt="Wash Your Hands For 20sec">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Através do vetor</h3>
+
+                  <p class="item-text text">
+                    Por meio da picada do inseto conhecido como mosquito palha, asa-dura, tatuquiras, birigui, entre outros. 
+                    As fêmeas infectadas picam os animais, e depois picam o ser humano.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/transm2.png" width="80" height="80" loading="lazy"
+                    alt="Cover Nose and Mouth When Sneezing">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Transfusão sanguínea</h3>
+
+                  <p class="item-text text">
+                    Quando o sangue do doador está infectado com o parasita Trypanosoma cruzi.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/transm3.png" width="80" height="80" loading="lazy"
+                    alt="Wear A Mask If Available">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Transmissão vertical</h3>
+
+                  <p class="item-text text">
+                    Quando parasitas provenientes do inseto passam da mãe para o filho.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/transm4.png" width="80" height="80" loading="lazy"
+                    alt="Wear A Mask If Available">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Uso de agulhas contaminadas</h3>
+
+                  <p class="item-text text">
+                    Provenientes do uso compartilhado das mesmas.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+          <!-- 
+            - CICLO DA DOENÇA (about) 
+          -->
+          <section class="section about" id="ciclo" aria-labelledby="about-label-1">
+            <div class="container">
+      
+              <figure class="about-banner">
+                  <img src="./img/ciclo-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Autoria Própria</p>
+              </figure>
+
+              <div class="about-content">
+
+                  <h2 class="h2 section-title">Ciclo da doença</h2>
+
+                  <p class="section-text text">
+                    
+                  </p>
+
+                  <ul class="about-list">
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo1.png" width="80" height="80" loading="lazy"
+                          alt="Wash Your Hands For 20sec">
+                        </figure>
+  
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Vetor infectado</h3>
+  
+                          <p class="item-text text">
+                            O mosquito, ao se alimentar do sangue de um hospedeiro infectado (que pode ser
+                            um ser humano ou um animal), também se torna infectado. 
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo2.png" width="80" height="80" loading="lazy"
+                            alt="Cover Nose and Mouth When Sneezing">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Desenvolvimento do parasita</h3>
+        
+                          <p class="item-text text">
+                            Dentro do flebotomíneo, o parasita começam a se multiplicar e se desenvolvem nas células
+                            do trato digestivo do inseto. Quando o mosquito pica um hospedeiro vertebrado, os
+                            parasitas são injetados na pele.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo3.png" width="80" height="80" loading="lazy"
+                            alt="Wear A Mask If Available">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Lesões na pele</h3>
+        
+                          <p class="item-text text">
+                            A multiplicação de parasitas no local da picada do mosquito  pode levar à formação de uma 
+                            lesão cutânea, como uma úlcera, que é a característica da leishmaniose tegumentar.
+                          </p>
+                        </div>
+                      </li>
+
+                  </ul>
+
+              </div>
+
+            </div>
+          </section>
+
+
+      <!-- 
+        - SINTOMAS (service)
+      -->
+
+      <section id="sintomas" class="section service has-bg-image" style="background-image: url('./img/sintoma-leish.png')"
+        aria-labelledby="service-label-1">
+        <div class="container">
+
+          <h2 class="h2 section-title" id="service-label-1">Sintomas da leishmaniose</h2>
+
+          <p class="section-text text">
+            Conheça alguns dos sintomas que a leishmaniose cutânea pode causar:
+
+          </p>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 130; --height: 130;">
+                  <img src="./img/lesoes-na-pele.png" width="130" height="130" loading="lazy"
+                    alt="Lesões cutâneas">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lesões cutâneas</h3>
+
+                  <p class="card-text text">
+                    A característica mais comum da leishmaniose tegumentar, se 
+                    desenvolvem no local da picada do mosquito infectado.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/coceira.png" width="110" height="110" loading="lazy"
+                    alt="Coceira intensa">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Coceira intensa</h3>
+
+                  <p class="card-text text">
+                    A coceira na área afetada pode ser persistente e causar desconforto significativo.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/inchaco.png" width="110" height="110" loading="lazy"
+                    alt="Inchaço localizado">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Inchaço localizado</h3>
+
+                  <p class="card-text text">
+                    Em alguns casos, pode ocorrer inchaço (edema) ao redor das lesões.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/cicatrizacao.png" width="110" height="110" loading="lazy"
+                    alt="Cicatrização difícil">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Cicatrização difícil</h3>
+
+                  <p class="card-text text">
+                    As úlceras resultantes da leishmaniose tegumentar podem levar um tempo significativo para cicatrizar.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/feridas.png" width="110" height="110" loading="lazy"
+                    alt="Feridas no corpo">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Feridas no corpo</h3>
+
+                  <p class="card-text text">
+                    As feridas podem se espalhar para outras partes do corpo.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/caracteristicas.png" width="110" height="110" loading="lazy"
+                    alt="Característica da lesão">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Característica da lesão</h3>
+
+                  <p class="card-text text">
+                    A lesão pode se tornar uma ferida aberta coberta por uma crosta.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - TRATAMENTO (about)
+      -->
+
+      <section class="section about" id="tratamento" aria-labelledby="about-label-2">
+        <div class="container">
+
+          <figure class="about-banner order-1">
+            <img src="./img/tratamento-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+              class="w-100">
+              <br>
+              <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Opas</p>
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">Tratamento </h2>
+
+            <p class="section-text text">
+             </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/trat1.png" width="80" height="80" loading="lazy"
+                    alt="Wash Your Hands For 20sec">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Medicamentos sistêmicos</h3>
+
+                  <p class="item-text text">
+                     Muitos medicamentos podem ser utilizados, como anfotericina B, pentamidina e miltefosina. 
+                     Eles são administrados por via oral, intramuscular ou intravenosa.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/trat2.png" width="80" height="80" loading="lazy"
+                    alt="Cover Nose and Mouth When Sneezing">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Medicamentos nas lesões</h3>
+
+                  <p class="item-text text">
+                    Em alguns casos, são utilizados medicamentos diretamente nas lesões cutâneas, como a aplicação 
+                    de pomadas. 
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/trat3.png" width="80" height="80" loading="lazy"
+                    alt="Wear A Mask If Available">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Crioterapia</h3>
+
+                  <p class="item-text text">
+                    Tratamento realizado com nitrogênio líquido, que vai destruir as células parasitadas 
+                    e estimular a cicatrização.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/trat4.png" width="80" height="80" loading="lazy"
+                    alt="Wear A Mask If Available">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Eletroterapia</h3>
+
+                  <p class="item-text text">
+                    Envolve a aplicação de corrente elétrica nas lesões cutâneas, também promove a destruição
+                    das células parasitadas e o estímulo da cicatrização.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - MEDIDAS PROFILÁTICAS (safety)
+      -->
+
+      <section id="medidas" class="section safety" aria-labelledby="safety-label">
+        <div class="container">
+
+          <h2 class="h2 section-title" id="safety-label">Medidas profiláticas</h2>
+
+          <p class="section-text text">
+            A prevenção da leishmaniose inclui medidas de controle dos vetores e redução da exposição aos mesmos. Conheça algumas dessas medidas abaixo:
+          </p>
+
+          <ol class="safety-list">
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 190; --height: 190;">
+                <img src="./img/repelentes.png" width="170" height="170" loading="lazy" alt="Usar repelentes"
+                  class="img">
+              </figure>
+
+              <span class="number">1</span>
+
+              <h3 class="h4 item-title">Usar repelentes</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/noite.png" width="170" height="170" loading="lazy" alt="Evitar exposição no horário de atividades do vetor"
+                  class="img">
+              </figure>
+
+              <span class="number">2</span>
+
+              <h3 class="h4 item-title">Evitar exposição no horário de atividades do vetor (crepúsculo e a noite)</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/limpeza-quintais.png" width="170" height="190" loading="lazy"
+                  alt="Limpeza de quintais e terrenos" class="img">
+              </figure>
+
+              <span class="number">3</span>
+
+              <h3 class="h4 item-title">Limpeza de quintais e terrenos</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/lixo.png" width="170" height="170" loading="lazy"
+                  alt="Destino adequado para o lixo" class="img">
+              </figure>
+
+              <span class="number">4</span>
+
+              <h3 class="h4 item-title">Destino adequado para o lixo orgânico</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/roupas-protecao.png" width="170" height="170" loading="lazy"
+                  alt="Usar roupas com proteção" class="img">
+              </figure>
+
+              <span class="number">5</span>
+
+              <h3 class="h4 item-title">Usar roupas com proteção</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/tela-porta-janela.png" width="170" height="170" loading="lazy"
+                  alt="Dormir em áreas com telas protetoras" class="img">
+              </figure>
+
+              <span class="number">6</span>
+
+              <h3 class="h4 item-title">Dormir em áreas com telas protetoras</h3>
+            </li>
+
+            
+
+          </ol>
+
+        </div>
+      </section>
+
+
+
+      <!--
+            REFERÊNCIAS
+          -->
+          <button id="ref" class="collapsible">Referências</button>
+          <div class="content1">
+              <div class="card-text text">
+                  <br>
+                  <p id="ref-par">CRUZ, Fundação Oswaldo. <strong>Quais são os principais sintomas da leishmaniose tegumentar?</strong> Disponível em: https://portal.fiocruz.br/pergunta/quais-sao-os-principais-sintomas-da-leishmaniose-tegumentar. Acesso em: 16 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">GOIÁS, Secretaria de Saúde de. <strong>Leishmaniose Tegumentar Americana</strong>. Disponível em: https://www.saude.go.gov.br/biblioteca/7343-leishmaniose-tegumentar-americana. Acesso em: 15 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Ministério da. <strong>Leishmaniose Tegumentar</strong>. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/l/lt#:~:text=Os%20sintomas%20da%20Leishmaniose%20Tegumentar,no%20nariz%2C%20boca%20e%20garganta. Acesso em: 15 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Ministério da. <strong>Leishmaniose Visceral</strong>. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/l/leishmaniose-visceral#:~:text=%C3%89%20transmitida%20ao%20homem%20pela,transmiss%C3%A3o%20%C3%A9%20a%20Lutzomyia%20longipalpis.. Acesso em: 16 maio 2023. </p>
+              </div>
+
+              
+          </div>
+          
+          <br><br><br><br>
+
+
+
+
+  </article>
+  </main>
+
+
+      <!-- 
+    - #FOOTER-->
+ 
+
+    <footer class="footer has-bg-image" id="rodape">
+      <div>
+        <div class="footer-bottom">
+          <img class="logo" src="https://dados.ifrn.edu.br/base/images/logo-ifrn.png">
+        </div>
+  
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          <strong>Desenvolvido pelas alunas:</strong>
+          <br>Camile Joice Rocha do Nascimento;
+            <br> Emine Aissa Franco do Nascimento;
+            <br>Maria das Vitórias da Costa Araújo;
+            <br> Raissa Laura Plácido Justino.
+            <br>
+            <br>
+          <strong>Orientador:</strong> Álvaro Hermano da Silva.
+          <br>
+          <strong>Coorientador(a):</strong>Thayse Azevedo da Silva.
+        </p>
+      </div>
+  
+      </div>
+      <div style="text-align: center;"> &copy; 2023 IFRN- Campus Parnamirim.<br> </div>
+      <br><br>
+    </footer>
+
+  
+  
+  <script src="leishmaniose.js"></script>
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+          });
+
+          $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+          });
+
+          $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+          });
+
+        });
+    </script>
+
+
+  
+</body>
+
+</html>

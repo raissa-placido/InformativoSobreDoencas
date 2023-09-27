@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Teníase</title>
+  <link href="teniase.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="./img/logotcc.png">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+</head>
+
+<body id=“top”>
+
+  <header class="cabecalho">
+    <div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="side-bar active">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="#intro"><i class="fas fa-desktop"></i>Introdução</a></div>
+          <div class="item"><a href="#agente"><i class="fas fa-notes-medical"></i>Agente etiológico</a></div>
+          <div class="item"><a href="#vetor"><i class="fas fa-syringe"></i>Vetor</a></div> <!--se tiver-->
+          <div class="item"><a href="#transmissao"><i class="fas fa-vial"></i>Transmissão</a></div>
+          <div class="item"><a href="#ciclo"><i class="fas fa-hospital"></i>Ciclo da doença</a></div>
+          <div class="item"><a href="#sintomas"><i class="fas fa-stethoscope"></i>Sintomas</a></div>
+          <div class="item"><a href="#tratamento"><i class="fas fa-capsules"></i>Tratamento</a></div>
+          <div class="item"><a href="#medidas"><i class="fas fa-thumbtack"></i>Medidas profiláticas</a></div>
+          
+          <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Homepage</a></div>
+          <div class="item"><a href="#"><i class="fas fa-microscope"></i>Microscópio virtual</a></div>
+          <div class="item"><a href="#"><i class="fas fa-chart-line"></i>Dados epidemiológicos</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="titulo-header">Teníase</p>
+    </div>
+
+    <div>
+      <button type="button" id="btnAumentar">A+</button>
+    </div>
+
+    <div>
+      <button type="button" id="btnDiminuir">A-</button>
+    </div>
+    
+    <div>
+      <input type="checkbox" name="change-theme" id="change-theme" />
+      <label for="change-theme">
+        <i class="bi bi-sun"></i>
+        <i class="bi bi-moon"></i
+      ></label>
+    </div>
+
+    
+  </header>
+
+    <!--CAPA-->
+  <div class="fundo">
+    <div class="header-content">
+      <h1>TENÍASE</h1>
+      <div class="line"></div>
+    </div>
+  </div>
+
+
+
+    <!-- LIBRAS -->
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+
+
+  
+
+
+  <main>
+    <article>
+      
+    <!--INTRODUÇÃO-->
+    <section class="section about" id="intro" aria-labelledby="about-label-2">
+      <div class="container">
+
+        <figure class="about-banner order-1">
+          <img src="./img/intro.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100"><br> 
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Escola Educação</p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Bem vindos!</p>
+          <h2 class="h2 section-title">Conheça a teníase:</h2>
+          <div class="item-content">
+            <h3 class="h4 item-title"></h3>
+
+            <p class="item-text text">
+             A teníase é uma verminose, causada por dois tipos de parasitas, que dependem 
+             de dois hospedeiros (um intermediário e um definitivo). Atinge com mais 
+             frequência a <strong>América Latina, Oriente Médio e Ásia</strong>, e é considerada uma doença 
+             tropical negligenciada.
+            </p>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+      <!-- 
+      - #AGENTE ETIOLÓGICO 1
+    -->
+
+    <section class="section about" id="agente" aria-labelledby="about-label-1">
+      <div class="container">
+        
+
+        <figure class="about-banner">
+          <img src="./img/solium.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100"><br> 
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Mundo Educação</p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Agente etiológico</p>
+          <h2 class="h2 section-title">Taenia Solium</h2>
+
+          <p class="section-text text">
+            <strong>Reino:</strong> Animalia <br>
+            <strong>Filo:</strong> Platyhelminthes <br>
+            <strong>Classe:</strong> Cestoda <br>
+            <strong>Ordem:</strong> Cyclophyllidea <br>
+            <strong>Família:</strong> Taeniidae <br>
+            <strong>Gênero:</strong> Taenia <br>
+            <strong>Espécie:</strong> Taenia solium
+
+          </p>
+
+          <ul class="about-list">
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/ciclo.png" width="80" height="80" loading="lazy" alt="Ciclo de vida">  
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Ciclo de vida</h3>
+
+                <p class="item-text text">
+                  Apresenta 3 estágios de desenvolvimento: ovos, cisticerco e verme adulto. O ciclo de vida depende da ingestão da carne 
+                  crua ou mal cozida, do porco, contendo cisticercos.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/sobre1.png" width="80" height="80" loading="lazy" alt="Sobre o agente">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Sobre o agente:</h3>
+
+                <p class="item-text text">
+                  A tênia dos porcos é um verme intestinal que pode atingir até 10 metros de comprimento no corpo humano; também é conhecida
+                  como solitária.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/alemdisso1.png" width="80" height="80" loading="lazy"
+                  alt="Além disso">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Além disso...</h3>
+
+                <p class="item-text text">
+                  Apresenta o homem como hospedeiro definitivo e o porco como hospedeiro intermediário.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <!--AGENTE ETIOLÓGICO 2-->
+    <section class="section about" aria-labelledby="about-label-2">
+      <div class="container">
+
+        <figure class="about-banner order-1">
+          <img src="./img/saginata.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100"><br>  
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Roberto J. Galindo</p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Agente etiológico</p>
+          <h2 class="h2 section-title">Taenia saginata</h2>
+
+          <p class="section-text text">
+            <strong>Reino:</strong> Animalia <br>
+            <strong>Filo:</strong> Platyhelminthes <br>
+            <strong>Classe:</strong> Cestoda <br>
+            <strong>Ordem:</strong> Cyclophyllidea <br>
+            <strong>Família:</strong> Taeniidae <br>
+            <strong>Gênero:</strong> Taenia <br>
+            <strong>Espécie:</strong> Taenia saginata
+          </p>
+
+          <ul class="about-list">
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/caract.png" width="80" height="80" loading="lazy"
+                  alt="Características">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Características</h3>
+
+                <p class="item-text text">
+                  Não apresentram ganchos (diferenciando-se da Taenia Solium), possuem o escólex, as ventosas, e as demais características da Taenia Solium.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/sobre2.png" width="80" height="80" loading="lazy"
+                  alt="Sobre o agente">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Sobre o agente:</h3>
+
+                <p class="item-text text">
+                  Quando estão no estado adulto, podem apresentar cerca de 3 a 5 metros de comprimento; 
+                  possuem sistema reprodutor masculino e feminino, sistema nervoso e canal excretor.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/alemdisso2.png" width="80" height="80" loading="lazy"
+                  alt="Além disso">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Além disso...</h3>
+
+                <p class="item-text text">
+                  Apresenta o homem como hospedeiro definitivo e o boi como hospedeiro intermediário.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- 
+      - #VETOR 1 DA DOENÇA
+    -->
+
+    <section class="section about" id="vetor" aria-labelledby="about-label-1">
+      <div class="container">
+        
+
+        <figure class="about-banner">
+          <img src="./img/vetor1-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100"><br> 
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Escola Educação</p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Vetor da Taenia solium</p>
+          <h2 class="h2 section-title">Porco</h2>
+
+          <p class="section-text text">
+
+          </p>
+
+          <ul class="about-list">
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/vetor1.png" width="80" height="80" loading="lazy" alt="Sobre o porco">  
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Sobre ele:</h3>
+
+                <p class="item-text text">
+                  O porco é o principal hospedeiro intermediário da Taenia solium. Os porcos se infectam 
+                  ao consumir alimentos ou água contaminados com os ovos do parasita. As larvas se alojam 
+                  principalmente nos músculos, formando cisticercos, que são bolsas cheias de líquido 
+                  contendo a larva.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--VETOR 2 DA DOENÇA-->
+    <section class="section about" aria-labelledby="about-label-2">
+      <div class="container">
+
+        <figure class="about-banner order-1">
+          <img src="./img/vetor2-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100"><br> 
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> iStock</p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Vetor da Taenia saginata</p>
+          <h2 class="h2 section-title">Gado bovino</h2>
+
+          <p class="section-text text">
+          </p>
+
+          <ul class="about-list">
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/vetor2.png" width="80" height="80" loading="lazy"
+                  alt="Sobre o gado bovino">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Sobre ele:</h3>
+
+                <p class="item-text text">
+                  O gado bovino é o hospedeiro intermediário da Taenia saginata. Assim como no caso da 
+                  Taenia solium, a infecção do gado ocorre pela ingestão de alimentos ou água contaminados 
+                  com ovos do parasita. No trato digestivo do gado, os ovos liberam as larvas, que migram 
+                  para os músculos e formam cisticercos.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    
+    
+    
+    
+    <!-- 
+            - TRANSMISSÃO (about)
+          -->
+    
+          <section class="section about" id="transmissao" aria-labelledby="about-label-2">
+            <div class="container">
+    
+              <figure class="about-banner order-1">
+                <img src="./img/transmissao-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100"><br> 
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Alamy</p>
+              </figure>
+    
+              <div class="about-content">
+    
+                <h2 class="h2 section-title">Transmissão</h2>
+    
+                <p class="section-text text">
+                </p>
+    
+                <ul class="about-list">
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/transm1.png" width="80" height="80" loading="lazy"
+                        alt="Wash Your Hands For 20sec">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Transmissão direta (pessoa a pessoa)</h3>
+    
+                      <p class="item-text text">
+                        A transmissão direta ocorre quando uma pessoa ingere carne de porco crua ou mal cozida contendo cisticercos da Taenia solium.
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/transm2.png" width="80" height="80" loading="lazy"
+                        alt="Cover Nose and Mouth When Sneezing">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Transmissão indireta (hospedeiro intermediário)</h3>
+    
+                      <p class="item-text text">
+                        A transmissão indireta ocorre quando uma pessoa ingere carne de boi crua ou mal cozida contendo cisticercos da Taenia saginata. Nesse caso, o boi é o hospedeiro intermediário.
+                      </p>
+                    </div>
+                  </li>
+    
+                </ul>
+    
+              </div>
+    
+            </div>
+          </section>
+    
+    
+    
+    
+          <!-- 
+            - CICLO DA DOENÇA (about) - parte 1
+          -->
+          <section class="section about" id="ciclo" aria-labelledby="about-label-1">
+            <div class="container">
+      
+              <figure class="about-banner">
+                  <img src="./img/ciclo1-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100"><br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> MD Saúde</p>
+              </figure>
+
+              <div class="about-content">
+
+                  <h2 class="h2 section-title">Ciclo da doença - Parte 1</h2>
+
+                  <p class="section-text text">
+                    Relacionado à fase do verme adulto no intestino:
+                  </p>
+
+                  <ul class="about-list">
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo1.png" width="80" height="80" loading="lazy"
+                          alt="Wash Your Hands For 20sec">
+                        </figure>
+  
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Infecção</h3>
+  
+                          <p class="item-text text">
+                            A infecção ocorre quando os ovos das tênias são ingeridos pelo ser humano através da ingestão de alimentos 
+                            ou água contaminados com fezes contendo os ovos.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo2.png" width="80" height="80" loading="lazy"
+                            alt="Cover Nose and Mouth When Sneezing">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Liberação das larvas</h3>
+        
+                          <p class="item-text text">
+                            No intestino delgado, os ovos são digeridos e liberam as larvas (chamadas de oncosferas), que penetram nas paredes 
+                            intestinais e entram na corrente sanguínea.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo3.png" width="80" height="80" loading="lazy"
+                            alt="Wear A Mask If Available">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Migração para os tecidos</h3>
+        
+                          <p class="item-text text">
+                            As larvas são transportadas pelo sistema circulatório para diversos órgãos e tecidos do corpo, onde se 
+                            desenvolvem em cisticercos.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo4.png" width="80" height="80" loading="lazy"
+                            alt="Wear A Mask If Available">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Encapsulamento nos tecidos</h3>
+        
+                          <p class="item-text text">
+                            Os cisticercos podem se alojar em diferentes órgãos, como músculos, fígado e pulmões, onde permanecem 
+                            encapsulados por um período prolongado, geralmente sem causar sintomas significativos.
+                          </p>
+                        </div>
+                      </li>
+
+                  </ul>
+
+              </div>
+
+            </div>
+          </section>
+
+
+          <!--
+                CICLO DA DOENÇA - parte 2
+            -->
+
+            <section class="section about" aria-labelledby="about-label-2">
+              <div class="container">
+      
+                <figure class="about-banner order-1">
+                  <img src="./img/ciclo2-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                    class="w-100"><br> 
+                    <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> UFRGS</p>
+                </figure>
+      
+                <div class="about-content">
+      
+                  <h2 class="h2 section-title">Ciclo da doença - Parte 2</h2>
+      
+                  <p class="section-text text">
+                    Relacionado à fase da larva no hospedeiro:
+                  </p>
+      
+                  <ul class="about-list">
+      
+                    <li class="about-item">
+                      <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                        <img src="./img/ciclo5.png" width="80" height="80" loading="lazy"
+                          alt="Wash Your Hands For 20sec">
+                      </figure>
+      
+                      <div class="item-content">
+                        <h3 class="h4 item-title">Transmissão para os hospedeiros intermediários</h3>
+      
+                        <p class="item-text text">
+                          A infecção dos hospedeiros intermediários ocorre quando eles ingerem alimentos ou água contaminados com os ovos das tênias.
+                        </p>
+                      </div>
+                    </li>
+      
+                    <li class="about-item">
+                      <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                        <img src="./img/ciclo6.png" width="80" height="80" loading="lazy"
+                          alt="Cover Nose and Mouth When Sneezing">
+                      </figure>
+      
+                      <div class="item-content">
+                        <h3 class="h4 item-title">Eclosão dos ovos e liberação das larvas</h3>
+      
+                        <p class="item-text text">
+                          No trato digestivo dos hospedeiros intermediários, os ovos ingeridos se rompem, liberando as larvas (oncosferas), 
+                          que perfuram a parede intestinal e migram para os tecidos do hospedeiro intermediário.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="about-item">
+                      <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                        <img src="./img/ciclo7.png" width="80" height="80" loading="lazy"
+                          alt="Wash Your Hands For 20sec">
+                      </figure>
+      
+                      <div class="item-content">
+                        <h3 class="h4 item-title">Formação de cisticercos</h3>
+      
+                        <p class="item-text text">
+                          As larvas se desenvolvem em cisticercos nos tecidos musculares do hospedeiro intermediário, principalmente na carne.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="about-item">
+                      <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                        <img src="./img/ciclo8.png" width="80" height="80" loading="lazy"
+                          alt="Wash Your Hands For 20sec">
+                      </figure>
+      
+                      <div class="item-content">
+                        <h3 class="h4 item-title">Ingestão pelos humanos</h3>
+      
+                        <p class="item-text text">
+                          Quando um ser humano ingere carne crua ou mal cozida contendo cisticercos, os cisticercos se dissolvem 
+                          e liberam as larvas no intestino humano, que se fixam às paredes intestinais e se desenvolvem em vermes 
+                          adultos. Esses vermes adultos se reproduzem e produzem ovos, que são liberados nas fezes, reiniciando o ciclo.
+                        </p>
+                      </div>
+                    </li>
+      
+                  </ul>
+      
+                </div>
+      
+              </div>
+            </section>
+    
+    
+    
+          <!-- 
+            - SINTOMAS (service)
+          -->
+    
+          <section id="sintomas" class="section service has-bg-image" style="background-image: url('./img/sintoma-teniase.png')"
+            aria-labelledby="service-label-1">
+            <div class="container">
+    
+              <h2 class="h2 section-title" id="service-label-1">Sintomas da cisticercose</h2>
+    
+              <p class="section-text text">
+                Muitos casos podem ocorrer de forma assintomática, porém algumas pessoas costumam ter sintomas, conheça alguns deles:
+
+              </p>
+    
+              <ul class="service-list">
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 130; --height: 130;">
+                      <img src="./img/verme-fezes.png" width="130" height="130" loading="lazy"
+                        alt="Presença de vermes nas fezes">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Presença de vermes nas fezes</h3>
+    
+                      <p class="card-text text">
+                        A eliminação de segmentos dos vermes adultos nas fezes é um dos sintomas mais característicos da teníase.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/dor-abdominal.png" width="110" height="110" loading="lazy"
+                        alt="Desconforto abdominal">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Desconforto abdominal</h3>
+    
+                      <p class="card-text text">
+                        Algumas pessoas podem experimentar desconforto ou dor abdominal, que pode variar de leve a moderada.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/vomito.png" width="110" height="110" loading="lazy"
+                        alt="Náuseas e vômitos">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Náuseas e vômitos</h3>
+    
+                      <p class="card-text text">
+                        Em alguns casos, a teníase pode causar sintomas digestivos, como náuseas e episódios de vômito.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/perda-de-peso.png" width="110" height="110" loading="lazy"
+                        alt="Perda de peso">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Perda de peso</h3>
+    
+                      <p class="card-text text">
+                        Em infecções mais graves ou prolongadas, a teníase pode causar perda de peso inexplicada.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/fraqueza.png" width="110" height="110" loading="lazy"
+                        alt="Fraqueza e fadiga">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Fraqueza e fadiga</h3>
+    
+                      <p class="card-text text">
+                        Pessoas infectadas podem sentir fraqueza e fadiga sem motivo aparente.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/coceira.png" width="110" height="110" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Irritação anal</h3>
+    
+                      <p class="card-text text">
+                        Em alguns casos, a presença dos segmentos do verme pode causar coceira e irritação na área anal.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+              </ul>
+    
+            </div>
+          </section>
+    
+    
+    
+    
+    
+          <!-- 
+            - TRATAMENTO (about)
+          -->
+    
+          <section class="section about" id="tratamento" aria-labelledby="about-label-2">
+            <div class="container">
+    
+              <figure class="about-banner order-1">
+                <img src="./img/tratamento-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100"><br> 
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> New England Journal of Medicine</p>
+              </figure>
+    
+              <div class="about-content">
+    
+                <h2 class="h2 section-title">Tratamento </h2>
+    
+                <p class="section-text text">
+                  O tratamento da teníase é realizado com o uso de medicamentos antiparasitários específicos. 
+                  O objetivo do tratamento é eliminar os vermes adultos presentes no intestino humano e 
+                  interromper a infecção.
+                </p>
+    
+                <ul class="about-list">
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/trat1.png" width="80" height="80" loading="lazy"
+                        alt="Wash Your Hands For 20sec">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Praziquantel</h3>
+    
+                      <p class="item-text text">
+                        É o medicamento de escolha para o tratamento da teníase.
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/trat2.png" width="80" height="80" loading="lazy"
+                        alt="Cover Nose and Mouth When Sneezing">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Niclosamida</h3>
+    
+                      <p class="item-text text">
+                        É outro medicamento antiparasitário eficaz no tratamento da teníase.
+                      </p>
+                    </div>
+                  </li>
+    
+                  
+    
+                </ul>
+    
+              </div>
+    
+            </div>
+          </section>
+    
+    
+    
+    
+          <!-- 
+            - MEDIDAS PROFILÁTICAS (safety)
+          -->
+    
+          <section id="medidas" class="section safety" aria-labelledby="safety-label">
+            <div class="container">
+    
+              <h2 class="h2 section-title" id="safety-label">Medidas profiláticas</h2>
+    
+              <p class="section-text text">
+                Saiba algumas formas de evitar a contaminação e propagação da teníase: 
+              </p>
+    
+              <ol class="safety-list">
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 190; --height: 190;">
+                    <img src="./img/antes-de-comer.png" width="170" height="170" loading="lazy" alt="Lavar as mãos antes das refeições"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">1</span>
+    
+                  <h3 class="h4 item-title">Lave as mãos antes das refeições</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/lavar-mao.png" width="170" height="170" loading="lazy" alt="Lavar as mãos após usar o banheiro"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">2</span>
+    
+                  <h3 class="h4 item-title">Lave as mãos após usar o banheiro</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/ver-cozimento.png" width="170" height="190" loading="lazy"
+                      alt="Certificar cozimento da carne" class="img">
+                  </figure>
+    
+                  <span class="number">3</span>
+    
+                  <h3 class="h4 item-title">Certifique-se de que a carne esteja devidamente cozida</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/comprar-carne.png" width="170" height="170" loading="lazy"
+                      alt="Comprar carnes provenientes de fontes seguras" class="img">
+                  </figure>
+    
+                  <span class="number">4</span>
+    
+                  <h3 class="h4 item-title">Compre carnes provenientes de fontes seguras e inspecionadas</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/carne-crua.png" width="170" height="170" loading="lazy"
+                      alt="Evite consumir carne crua" class="img">
+                  </figure>
+    
+                  <span class="number">5</span>
+    
+                  <h3 class="h4 item-title">Evite consumir carne crua ou mal passada</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/melhorar-sanemento básico.png" width="170" height="170" loading="lazy"
+                      alt="Promover saneamento básico" class="img">
+                  </figure>
+    
+                  <span class="number">6</span>
+    
+                  <h3 class="h4 item-title">Promover saneamento básico</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/promover-conscientizacao.png" width="170" height="170" loading="lazy" alt="Promover conscientização"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">7</span>
+    
+                  <h3 class="h4 item-title">Promover conscientização e a educação sobre a doença</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/antiparasitario.png" width="170" height="170" loading="lazy"
+                      alt="Realizar tratamentos antiparasitários" class="img">
+                  </figure>
+    
+                  <span class="number">8</span>
+    
+                  <h3 class="h4 item-title">Realizar tratamentos antiparasitários em animais que podem transmitir a doença</h3>
+                </li>
+    
+              </ol>
+    
+            </div>
+          </section>
+
+
+
+          <!--
+            REFERÊNCIAS
+          -->
+          <button id="ref" class="collapsible">Referências</button>
+          <div class="content1">
+              <div class="card-text text">
+                  <br>
+                  <p id="ref-par">VARELLA, Drauzio. <strong>Verminoses</strong>. Disponível em: https://drauziovarella.uol.com.br/doencas-e-sintomas/verminoses/amp/. Acesso em: 12 maio 2023. </p>
+                  <br>
+                  <p id="ref-par">PAULO, Secretaria de Estado da Saúde de São. <strong>Teníase</strong>. Disponível em: https://www.saude.sp.gov.br/resources/cve-centro-de-vigilancia-epidemiologica/areas-de-vigilancia/doencas-transmitidas-por-agua-e-alimentos/doc/parasitas/taenia_sag.pdf. Acesso em: 18 maio 2023.</p>
+              </div>
+          </div>
+
+          <br><br><br><br>
+    
+    </article>
+  </main>
+
+
+
+
+  <!-- 
+    - #FOOTER-->
+ 
+
+    <footer class="footer has-bg-image" id="rodape">
+      <div>
+        <div class="footer-bottom">
+          <img class="logo" src="https://dados.ifrn.edu.br/base/images/logo-ifrn.png">
+        </div>
+  
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          <strong>Desenvolvido pelas alunas:</strong>
+          <br>Camile Joice Rocha do Nascimento;
+            <br> Emine Aissa Franco do Nascimento;
+            <br>Maria das Vitórias da Costa Araújo;
+            <br> Raissa Laura Plácido Justino.
+            <br>
+            <br>
+          <strong>Orientador:</strong> Álvaro Hermano da Silva.
+          <br>
+          <strong>Coorientador(a):</strong>Thayse Azevedo da Silva.
+        </p>
+      </div>
+  
+      </div>
+      <div style="text-align: center;"> &copy; 2023 IFRN- Campus Parnamirim.<br> </div>
+      <br><br>
+    </footer>
+
+
+  
+  
+  <script src="teniase.js"></script>
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+          });
+
+          $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+          });
+
+          $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+          });
+
+        });
+    </script>
+
+
+  
+</body>
+
+</html>

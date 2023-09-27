@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Malária</title>
+  <link href="malaria.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="./img/logotcc.png">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+</head>
+
+<body id=“top”>
+
+  <header class="cabecalho">
+    <div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="side-bar active">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="#intro"><i class="fas fa-desktop"></i>Introdução</a></div>
+          <div class="item"><a href="#agente"><i class="fas fa-notes-medical"></i>Agente etiológico</a></div>
+          <div class="item"><a href="#vetor"><i class="fas fa-syringe"></i>Vetor</a></div> <!--se tiver-->
+          <div class="item"><a href="#transmissao"><i class="fas fa-vial"></i>Transmissão</a></div>
+          <div class="item"><a href="#ciclo"><i class="fas fa-hospital"></i>Ciclo da doença</a></div>
+          <div class="item"><a href="#sintomas"><i class="fas fa-stethoscope"></i>Sintomas</a></div>
+          <div class="item"><a href="#tratamento"><i class="fas fa-capsules"></i>Tratamento</a></div>
+          <div class="item"><a href="#medidas"><i class="fas fa-thumbtack"></i>Medidas profiláticas</a></div>
+          
+          <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Homepage</a></div>
+          <div class="item"><a href="#"><i class="fas fa-microscope"></i>Microscópio virtual</a></div>
+          <div class="item"><a href="#"><i class="fas fa-chart-line"></i>Dados epidemiológicos</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="titulo-header">Malária</p>
+    </div>
+
+    <div>
+      <button type="button" id="btnAumentar">A+</button>
+    </div>
+
+    <div>
+      <button type="button" id="btnDiminuir">A-</button>
+    </div>
+    
+    <div>
+      <input type="checkbox" name="change-theme" id="change-theme" />
+      <label for="change-theme">
+        <i class="bi bi-sun"></i>
+        <i class="bi bi-moon"></i
+      ></label>
+    </div>
+
+    
+  </header>
+
+
+    <!--CAPA-->
+  <div class="fundo">
+    <div class="header-content">
+      <h1>MALÁRIA</h1>
+      <div class="line"></div>
+    </div>
+  </div>
+
+
+
+      <!-- LIBRAS -->
+
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+
+
+  
+
+
+<main>
+    <article>
+      
+      
+    <!--INTRODUÇÃO-->
+    <section class="section about" id="intro" aria-labelledby="about-label-2">
+      <div class="container">
+
+        <figure class="about-banner order-1">
+          <img src="./img/intro.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100">
+            <br>
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Luis Oliveira/Ministério da Saúde</p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Bem vindos!</p>
+          <h2 class="h2 section-title">Conheça a malária:</h2>
+
+          <div class="item-content">
+            <h3 class="h4 item-title"></h3>
+
+            <p class="item-text text">
+            A malária é uma protozoose (doença causada por protozoário) e atinge 
+            cerca de <strong>88 países</strong> quando trata-se da sua transmissão 
+            natural (pela picada do mosquito). Alguns deles são <strong>Caribe, 
+            China, Paraguai</strong>, e os países amazônicos da América (como <strong>Bolívia, Equador, 
+            Colômbia, Venezuela, Guiana, Suriname, Guiana Francesa e Brasil</strong>).
+            </p>
+            <br>
+            <p class="item-text text">
+             No Brasil, a região da Amazônia é a mais afetada, com 98% dos casos 
+             (atingindo o <strong>Acre, Amapá, Amazonas, Pará, Rondônia e Roraima</strong>). 
+             Além disso, o dia 06/11 é considerado o Dia da Malária nas Américas. 
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+      <!-- 
+        - AGENTES ETIOLÓGICOS (doctor)
+      -->
+
+      <section id="agente" class="section doctor" style="background-image: url('./assets/images/service-bg.jpg')"
+        aria-labelledby="doctor-label">
+        <div class="container">
+
+          <h2 class="h2 section-title" id="doctor-label">Agentes etiológicos</h2>
+
+          <p class="section-text text">
+            Os agentes que causam a malária são protozoários do gênero Plasmodium. 
+            Entre as espécies que serão abordadas aqui, apenas o Plasmodium knowlesi 
+            é mais comum em animais do que em humanos. Conheça um pouco mais sobre as espécies:
+
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="doctor-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                  <img src="./img/Plasmodium-vivax.jpg" width="350" height="360" loading="lazy"
+                    alt="P. vivax" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h4 card-title">Plasmodium vivax</h3>
+
+                  <button class="collapsible">Leia mais</button>
+                  <div class="content2">
+                    <div class="card-text text">
+                      <p>
+                        <strong>Reino:</strong> Protista <br>
+                        <strong>Filo:</strong> Apicomplexa <br>
+                        <strong>Classe:</strong> Aconoidasida <br>
+                        <strong>Ordem:</strong> Haemosporida <br>
+                        <strong>Família:</strong> Plasmodiidae <br>
+                        <strong>Gênero:</strong> Plasmodium <br>
+                        <strong>Espécie:</strong> Plasmodium vivax
+                      </p>
+                      <br>
+                      <p><strong>Fonte:</strong>CDC/ Steven Glenn </p>
+                    </div>
+                  </div>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="doctor-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                  <img src="./img/Plasmodium-falciparum.png" width="350" height="360" loading="lazy"
+                    alt="P. falciparum" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h4 card-title">Plasmodium falciparum</h3>
+
+                  <button class="collapsible">Leia mais</button>
+                  <div class="content2">
+                    <div class="card-text text">
+                      <p>
+                        <strong>Reino:</strong> Protista <br>
+                        <strong>Filo:</strong> Apicomplexa <br>
+                        <strong>Classe:</strong> Aconoidasida <br>
+                        <strong>Ordem:</strong> Haemosporida <br>
+                        <strong>Família:</strong> Plasmodiidae <br>
+                        <strong>Gênero:</strong> Plasmodium <br>
+                        <strong>Espécie:</strong> Plasmodium falciparum
+                      </p>
+                      <br>
+                      <p><strong>Fonte:</strong> CIBFar/USP</p>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="doctor-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                  <img src="./img/Plasmodium-malarie.jpg" width="350" height="360" loading="lazy"
+                    alt="P. malarie" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h4 card-title">Plasmodium malarie</h3>
+
+                  <button class="collapsible">Leia mais</button>
+                  <div class="content2">
+                    <div class="card-text text">
+                      <p>
+                        <strong>Reino:</strong> Protista <br>
+                        <strong>Filo:</strong> Apicomplexa <br>
+                        <strong>Classe:</strong> Aconoidasida <br>
+                        <strong>Ordem:</strong> Haemosporida <br>
+                        <strong>Família:</strong> Plasmodiidae <br>
+                        <strong>Gênero:</strong> Plasmodium <br>
+                        <strong>Espécie:</strong> Plasmodium malarie
+                      </p>
+                      <br>
+                      <p><strong>Fonte:</strong> Planeta biologia</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="doctor-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                  <img src="./img/Plasmodium-ovale.jpg" width="350" height="360" loading="lazy"
+                    alt="P. ovale" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h4 card-title">Plasmodium ovale</h3>
+
+                  <button class="collapsible">Leia mais</button>
+                  <div class="content2">
+                    <div class="card-text text">
+                      <p>
+                        <strong>Reino:</strong> Protista <br>
+                        <strong>Filo:</strong> Apicomplexa <br>
+                        <strong>Classe:</strong> Aconoidasida <br>
+                        <strong>Ordem:</strong> Haemosporida <br>
+                        <strong>Família:</strong> Plasmodiidae <br>
+                        <strong>Gênero:</strong> Plasmodium <br>
+                        <strong>Espécie:</strong> Plasmodium ovale
+                      </p>
+                      <br>
+                      <p><strong>Fonte:</strong> CDC/ Steven Glenn</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="doctor-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                  <img src="./img/Plasmodium-knowlesi.jpg" width="350" height="360" loading="lazy"
+                    alt="P. knowlesi" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h4 card-title">Plasmodium knowlesi</h3>
+
+                  <button class="collapsible">Leia mais</button>
+                  <div class="content2">
+                    <div class="card-text text">
+                      <p>
+                        <strong>Reino:</strong> Protista <br>
+                        <strong>Filo:</strong> Apicomplexa <br>
+                        <strong>Classe:</strong> Aconoidasida <br>
+                        <strong>Ordem:</strong> Haemosporida <br>
+                        <strong>Família:</strong> Plasmodiidae <br>
+                        <strong>Gênero:</strong> Plasmodium <br>
+                        <strong>Espécie:</strong> Plasmodium knowlesi
+                      </p>
+                      <br>
+                      <p><strong>Fonte:</strong> CDC/ Steven Glenn</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+       <!-- 
+            - VETOR DA DOENÇA 
+          -->
+          <section class="section about" id="vetor" aria-labelledby="about-label-1">
+            <div class="container">
+      
+              <figure class="about-banner">
+                  <img src="./img/vetor-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100"><br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> TheFACT/Flickr</p>
+              </figure>
+
+              <div class="about-content">
+
+                <p class="about-subtitle" id="about-label-1">Vetor da doença</p>
+                <h2 class="h2 section-title">Anopheles</h2>
+                <p class="section-text text">
+                    <strong>Reino:</strong> Animalia  <br>
+                    <strong>Filo:</strong> Arthropoda  <br>
+                    <strong>Classe:</strong> Insecta  <br>
+                    <strong>Ordem:</strong> Diptera  <br>
+                    <strong>Família:</strong> Culicidae <br>
+                    <strong>Gênero:</strong> Anopheles <br>
+                    <strong>Subgênero:</strong> Nyssorhynchus e Kerteszia <br>
+                    <strong>Espécie:</strong> Anopheles (Nyssorhynchus) darlingi
+                </p>
+
+                  <ul class="about-list">
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/vetor.png" width="80" height="80" loading="lazy"
+                          alt="Wash Your Hands For 20sec">
+                        </figure>
+  
+                        <div class="item-content">
+                          <h3 class="h4 item-title"></h3>
+  
+                          <p class="item-text text">
+                            As fêmeas que transmitem a malária para os humanos no momento em que vão se alimentar 
+                            de sangue, e essa necessidade de sangue é para que possam produzir e desenvolver 
+                            seus ovos (para o ciclo de vida dos novos mosquitos seja mantido). Segundo a Organização 
+                            Pan-Americana da Saúde (OPAN), existem mais de 400 espécies desse mosquito, e 
+                            cerca de 30 deles são vetores importantes da malária.
+                          </p>
+                        </div>
+                      </li>
+
+                    
+
+                  </ul>
+
+              </div>
+
+            </div>
+          </section>
+
+
+
+
+
+      <!-- 
+        - TRANSMISSÃO (about)
+      -->
+
+      <section class="section about" id="transmissao" aria-labelledby="about-label-2">
+        <div class="container">
+
+          <figure class="about-banner order-1">
+            <img src="./img/transmissao-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+              class="w-100">
+              <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> iStock</p>
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">Transmissão </h2>
+
+            <p class="section-text text">
+            A transmissão da malária pode ocorrer de várias formas, conheça abaixo algumas delas:</p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/transm1.png" width="80" height="80" loading="lazy"
+                    alt="Wash Your Hands For 20sec">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Através do vetor</h3>
+
+                  <p class="item-text text">
+                    Ocorre por meio da picada da fêmea do mosquito Anopheles infectada por uma ou mais espécies do protozoário Plasmodium
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/transm2.png" width="80" height="80" loading="lazy"
+                    alt="Cover Nose and Mouth When Sneezing">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Transfusão de sangue</h3>
+
+                  <p class="item-text text">
+                    Quando o doador apresenta sangue contaminado com o parasita da malária. São casos mais raros.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/transm3.png" width="80" height="80" loading="lazy"
+                    alt="Wear A Mask If Available">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Seringas infectadas</h3>
+
+                  <p class="item-text text">
+                    Ocorre quando há uso de agulhas ou instrumentos contaminados com sangue de uma pessoa infectada.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/transm.png" width="80" height="80" loading="lazy"
+                    alt="Wear A Mask If Available">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Pela placenta (congênita) para o feto</h3>
+
+                  <p class="item-text text">
+                    Acontece quando a mãe infectada transmite o parasita para o feto durante a gravidez ou para o recém-nascido durante o parto.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+     <!-- 
+            - CICLO DA DOENÇA (about) 
+          -->
+          <section class="section about" id="ciclo" aria-labelledby="about-label-1">
+            <div class="container">
+      
+              <figure class="about-banner">
+                  <img src="./img/ciclo-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100"><br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> iStock </p>
+              </figure>
+
+              <div class="about-content">
+
+                  <h2 class="h2 section-title">Ciclo da doença</h2>
+
+                  <ul class="about-list">
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo.png" width="80" height="80" loading="lazy"
+                          alt="Wash Your Hands For 20sec">
+                        </figure>
+  
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Contaminação</h3>
+  
+                          <p class="item-text text">
+                            Quando a fêmea do mosquito Anopheles, que está infectada, pica o ser humano, vai injetar o protozoário na forma de esporozíto.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo2.png" width="80" height="80" loading="lazy"
+                            alt="Cover Nose and Mouth When Sneezing">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title"></h3>
+        
+                          <p class="item-text text">
+                            Esses esporozítos vão seguir em direção ao fígado, que vao infectar os hepatócitos (as células que compõem o tecido hepático, do fígado). 
+                            Além disso, os esporozítos vão originar os merozoítos, que rompem os hepatócitos e infectam as hemácias.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo3.png" width="80" height="80" loading="lazy"
+                            alt="Wear A Mask If Available">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title"></h3>
+        
+                          <p class="item-text text">
+                            Há mudanças nos merozoítos, em que eles se transformam em trofozoítos, que vão dar origem a novos merozoítos (que vão romper algumas hemácias
+                            e infectar outras).
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo4.png" width="80" height="80" loading="lazy"
+                            alt="Wear A Mask If Available">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title"></h3>
+        
+                          <p class="item-text text">
+                            Quando as hemácias são rompidas, os esquizontes (estruturas encontradas no Plasmodium) vão ficar livres no sangue. É nesse momento em que os 
+                            sintomas da malária começam a se intensificar.
+                          </p>
+                        </div>
+                      </li>
+
+                  </ul>
+
+              </div>
+
+            </div>
+          </section>
+
+
+
+
+      <!-- 
+        - SINTOMAS (service)
+      -->
+
+      <section id="sintomas" class="section service has-bg-image" style="background-image: url('https://assets-global.website-files.com/5b03c2c5f551b29f01058a3a/61eea5668447bf14fde2b715_iStock-1311852235.jpg')"
+        aria-labelledby="service-label-1">
+        <div class="container">
+
+          <h2 class="h2 section-title" id="service-label-1">Sintomas da malária</h2>
+
+          <p class="section-text text">
+            Os sintomas da malária variam, pois dependem da espécie do protozoário que vai infectar o 
+            ser humano. Em casos mais graves ou não tratados, a malária pode levar a complicações 
+            mais severas. Conheça alguns dos sintomas da doença logo abaixo:
+          </p>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 130; --height: 130;">
+                  <img src="./img/dor-abdominal.png" width="130" height="130" loading="lazy"
+                    alt="service image">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Dor abdominal intensa</h3>
+
+                  <p class="card-text text">
+                    Que podem ser acompanhadas por manifestações de náuseas, vômitos
+                    astenia, fadiga e diarreia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/febre.png" width="110" height="110" loading="lazy"
+                    alt="service image">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Febre alta</h3>
+
+                  <p class="card-text text">Dependendo da espécie do parasita, a febre alta pode ser acompanhada por
+                    calafrios, suores e cefaleia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/ictericia.png" width="110" height="110" loading="lazy"
+                    alt="service image">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Mucosas amarelas</h3>
+
+                  <p class="card-text text">O envolvimento da malária acaba manifestando icterícia no indivíduo 
+                    (não confundir com mucosas hipocoradas).
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/desorientacao.png" width="110" height="110" loading="lazy"
+                    alt="service image">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Convulsão ou desorientação</h3>
+
+                  <p class="card-text text">Não confundir com o ataque paroxístico febril (calafrios seguidos por uma
+                  fase febril, com temperaturas de 41°C).
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/hipoglicemia.png" width="110" height="110" loading="lazy"
+                    alt="service image">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Hipoglicemia</h3>
+
+                  <p class="card-text text">
+                  Casos de malária grave (infecção por P. falciparum), causado pelo consumo de glicose pelo próprio parasita.</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/cianose.png" width="110" height="110" loading="lazy"
+                    alt="service image">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Cianose</h3>
+
+                  <p class="card-text text">
+                  Extremidades azuladas na pele, nos lábios ou nas unhas (causadas por escassez de oxigênio no sangue)</p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - TRATAMENTO (about)
+      -->
+
+      <section class="section about" id="tratamento" aria-labelledby="about-label-2">
+        <div class="container">
+
+          <figure class="about-banner order-1">
+            <img src="./img/tratamento-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+              class="w-100">
+              <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Prefeitura de Manaus </p>
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">Tratamento </h2>
+
+            <p class="section-text text">
+              O tratamento da doença envolve medicamentos antimaláricos para eliminar o parasita. 
+              É importante ressaltar que tais tratamentos devem seguir a partir de <strong>instruções
+                de um médico</strong>. Alguns medicamentos antimaláricos são:
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/trat1.png" width="80" height="80" loading="lazy"
+                    alt="Wash Your Hands For 20sec">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title"></h3>
+
+                  <p class="item-text text">
+                    A cloroquina, por exemplo, é eficaz contra algumas espécies do parasita. Entretanto, não é eficaz contra o 
+                    Plasmodium falciparum, que adquiriu resistência ao medicamento.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/trat2.png" width="80" height="80" loading="lazy"
+                    alt="Cover Nose and Mouth When Sneezing">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title"></h3>
+
+                  <p class="item-text text">
+                   Outros medicamentos prescritos são mefloquina, doxicilina, primaquina, entre outros.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/trat3.png" width="80" height="80" loading="lazy"
+                    alt="Wear A Mask If Available">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Importante!!!</h3>
+
+                  <p class="item-text text">
+                    A escolha do medicamento dependerá do tipo de malária, da localização geográfica e da 
+                    resistência do parasita aos medicamentos.
+                  </p>
+                </div>
+              </li>
+
+              
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - MEDIDAS PROFILÁTICAS (safety)
+      -->
+
+      <section id="medidas" class="section safety" aria-labelledby="safety-label">
+        <div class="container">
+
+          <h2 class="h2 section-title" id="safety-label">Medidas profiláticas</h2>
+
+          <p class="section-text text">
+            Em áreas endêmicas, a prevenção da malária é de grande importância. Portanto, conheça as medidas preventivas da doença:
+
+          </p>
+
+          <ol class="safety-list">
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 190; --height: 190;">
+                <img src="./img/mosquiteiros.png" width="170" height="170" loading="lazy" alt="Uso de mosquiteiros"
+                  class="img">
+              </figure>
+
+              <span class="number">1</span>
+
+              <h3 class="h4 item-title">Uso de mosquiteiros</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/roupas-protecao.png" width="170" height="170" loading="lazy" alt="Roupas com proteção"
+                  class="img">
+              </figure>
+
+              <span class="number">2</span>
+
+              <h3 class="h4 item-title">Roupas com proteção</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/tela-porta-janela.png" width="170" height="190" loading="lazy"
+                  alt="Telas em portas e janelas" class="img">
+              </figure>
+
+              <span class="number">3</span>
+
+              <h3 class="h4 item-title">Telas em portas e janelas</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/repelentes.png" width="170" height="170" loading="lazy"
+                  alt="Uso de repelentes" class="img">
+              </figure>
+
+              <span class="number">4</span>
+
+              <h3 class="h4 item-title">Uso de repelentes</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/controle-veg-aquat.png" width="170" height="170" loading="lazy"
+                  alt="Controle da vegetação aquática" class="img">
+              </figure>
+
+              <span class="number">5</span>
+
+              <h3 class="h4 item-title">Controle da vegetação aquática</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/limpeza-de-margem.png" width="170" height="170" loading="lazy"
+                  alt="Limpeza da margem de criadouros" class="img">
+              </figure>
+
+              <span class="number">6</span>
+
+              <h3 class="h4 item-title">Limpeza da margem de criadouros</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/drenagem-de-criadouro.png" width="170" height="170" loading="lazy" alt="Drenagem e aterro de criadouros"
+                  class="img">
+              </figure>
+
+              <span class="number">7</span>
+
+              <h3 class="h4 item-title">Drenagem e aterro de criadouros</h3>
+            </li>
+
+            <li class="safety-item">
+              <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                <img src="./img/melhorar-moradia.png" width="170" height="170" loading="lazy"
+                  alt="Melhoramento da moradia" class="img">
+              </figure>
+
+              <span class="number">8</span>
+
+              <h3 class="h4 item-title">Melhoramento da moradia</h3>
+            </li>
+
+          </ol>
+
+        </div>
+      </section>
+
+
+      <!--
+            REFERÊNCIAS
+          -->
+          <button id="ref" class="collapsible">Referências</button>
+          <div class="content1">
+              <div class="card-text text">
+                  <br>
+                  <p id="ref-par">BAHIA, Governo do Estado da. <strong>Malária</strong>. Apresentação. Disponível em: https://www.saude.ba.gov.br/suvisa/vigilancia-epidemiologica/doencas-de-transmissao-vetorial/malaria/.  Acesso em: 18 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">BARONE, Alessandra. <strong>Malária</strong>. Disponível em: http://www.profbio.com.br/aulas/parasito1_06.pdf. Acesso em: 14 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">PARANÁ, Secretaria da Saúde do. <strong>Malária</strong>. Disponível em: https://www.saude.pr.gov.br/Pagina/Malaria. Acesso em: 16 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">RONDÔNIA, Fiocruz. <strong>Anopheles</strong>. Disponível em: https://www.rondonia.fiocruz.br/pivem/anopheline/. Acesso em: 25 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Biblioteca Virtual em. <strong>Dia da malária nas Américas</strong>. Disponível em: https://bvsms.saude.gov.br/06-11-dia-da-malaria-nas-americas/. Acesso em: 16 maio 2023</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Ministério da. <strong>Boletim Epidemiológico Vol.53 N°50</strong>: malária na extra-amazônica do brasil. Malária na extra-amazônica do Brasil. 2022. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/malaria/situacao-epidemiologica-da-malaria-1/boletins-epidemiologicos-de-malaria/boletim-epidemiologico-vol-53-no30-2022-malaria-na-regiao-extra-amazonica-do-brasil-serie-historica-de-2010-a-2021/view. Acesso em: 18 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Ministério da. <strong>Malária</strong>. Sobre a malária. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/malaria. Acesso em: 22 maio 2023.</p>
+              </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER-->
+ 
+
+    <footer class="footer has-bg-image" id="rodape">
+      <div>
+        <div class="footer-bottom">
+          <img class="logo" src="https://dados.ifrn.edu.br/base/images/logo-ifrn.png">
+        </div>
+  
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          <strong>Desenvolvido pelas alunas:</strong>
+          <br>Camile Joice Rocha do Nascimento;
+            <br> Emine Aissa Franco do Nascimento;
+            <br>Maria das Vitórias da Costa Araújo;
+            <br> Raissa Laura Plácido Justino.
+            <br>
+            <br>
+          <strong>Orientador:</strong> Álvaro Hermano da Silva.
+          <br>
+          <strong>Coorientador(a):</strong>Thayse Azevedo da Silva.
+        </p>
+      </div>
+  
+      </div>
+      <div style="text-align: center;"> &copy; 2023 IFRN- Campus Parnamirim.<br> </div>
+      <br><br>
+    </footer>
+  
+
+            
+  
+  <script src="malaria.js"></script>
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+          });
+
+          $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+          });
+
+          $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+          });
+
+        });
+    </script>
+
+
+  
+</body>
+
+</html>

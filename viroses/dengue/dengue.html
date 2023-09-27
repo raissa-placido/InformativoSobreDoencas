@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dengue</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link rel="icon" type="image/png" href="./img/logotcc.png">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+  
+  <link href="dengue.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="top">
+
+  <header class="cabecalho">
+    <div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="side-bar active">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="#intro"><i class="fas fa-desktop"></i>Introdução</a></div>
+          <div class="item"><a href="#agente"><i class="fas fa-notes-medical"></i>Agente etiológico</a></div>
+          <div class="item"><a href="#vetor"><i class="fas fa-syringe"></i>Vetor</a></div> <!--se tiver-->
+          <div class="item"><a href="#transmissao"><i class="fas fa-vial"></i>Transmissão</a></div>
+          <div class="item"><a href="#ciclo"><i class="fas fa-hospital"></i>Ciclo da doença</a></div>
+          <div class="item"><a href="#sintomas"><i class="fas fa-stethoscope"></i>Sintomas</a></div>
+          <div class="item"><a href="#tratamento"><i class="fas fa-capsules"></i>Tratamento</a></div>
+          <div class="item"><a href="#medidas"><i class="fas fa-thumbtack"></i>Medidas profiláticas</a></div>
+          
+          <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Homepage</a></div>
+          <div class="item"><a href="#"><i class="fas fa-microscope"></i>Microscópio virtual</a></div>
+          <div class="item"><a href="#"><i class="fas fa-chart-line"></i>Dados epidemiológicos</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="titulo-header">Dengue</p>
+    </div>
+
+    <div>
+      <button type="button" id="btnAumentar">A+</button>
+    </div>
+
+    <div>
+      <button type="button" id="btnDiminuir">A-</button>
+    </div>
+    
+    <div>
+      <input type="checkbox" name="change-theme" id="change-theme" />
+      <label for="change-theme">
+        <i class="bi bi-sun"></i>
+        <i class="bi bi-moon"></i
+      ></label>
+    </div>
+
+    
+  </header>
+
+
+  <!--CAPA-->
+  <div class="fundo">
+        <div class="header-content">
+          <h1>DENGUE</h1>
+          <div class="line"></div>
+        </div>
+  </div>
+
+
+  
+  <!-- LIBRAS -->
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  
+
+  <main>
+      <article>
+
+        <!--INTRODUÇÃO-->
+    <section class="section about" id="intro" aria-labelledby="about-label-2">
+      <div class="container">
+
+        
+        <figure class="about-banner order-1">
+          <img src="./img/intro.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100">
+            <br>
+           <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Prefeitura de Paraibuna </p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Bem vindos!</p>
+          <h2 class="h2 section-title">Conheça a dengue:</h2>
+
+
+          <ul class="about-list">
+
+            <li class="about-item">
+
+              <div class="item-content">
+                <h3 class="h4 item-title"></h3>
+
+                <p class="item-text text">
+                  A dengue é uma arbovirose (doença causada por vírus) que atinge mais 
+                  de <strong>100 países</strong> nas regiões da <strong> África, Américas, Mediterrâneo Oriental, 
+                  Sudeste Asiático e Pacífico Ocidental</strong>. Ocorre principalmente em áreas 
+                  urbanas com clima tropical ou subtropical. A sua forma grave é uma das 
+                  principais causas de doenças graves e morte de crianças dos países da Á
+                  sia e América Latina.
+                </p>
+                <br>
+                <p class="item-text text">
+                  No Brasil, o período do ano com maior transmissão da doença ocorre nos 
+                  meses mais chuvosos (novembro a maio). Além disso, no dia 19 de novembro 
+                  comemora-se o <strong>Dia Nacional de Combate à Dengue</strong>, tal data serve de alerta 
+                  para a população e a participação dela para o combate ao vetor da doença.
+
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+      
+
+
+
+
+
+
+  
+      <!-- 
+        - AGENTES ETIOLÓGICOS (doctor)
+      -->
+
+      <section id="agente" class="section doctor" style="background-image: url('./')"
+      aria-labelledby="doctor-label">
+      <div class="container">
+
+        <h2 class="h2 section-title" id="doctor-label">Agentes etiológicos</h2>
+
+        <p class="section-text text">
+          A dengue é causada pelo grupo do vírus <strong>DENV</strong>, que pertencem ao gênero Flavivirus, 
+          tal grupo apresenta quatro tipos diferentes desse vírus, que são denominados os 
+          sorotipos: <strong>DENV-1, DENV-2, DENV-3 e DENV-4</strong>. Estes sorotipos são geneticamente 
+          distintos, mas causam sintomas bem parecidos nos infectados. Caso a pessoa seja 
+          infectada uma segunda vez por outro sorotipo, os riscos de contrair a dengue grave 
+          aumentam. 
+
+        </p>
+
+        <ul class="grid-list">
+
+          <li>
+            <div class="doctor-card">
+
+              <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                <img src="./img/denv1.jpg" width="350" height="360" loading="lazy"
+                  alt="" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h4 card-title">DENV-1</h3>
+
+                <button class="collapsible">Leia mais</button>
+                  <div class="content2">
+                    <div class="card-text text">
+                      <p>
+                        <strong>Reino:</strong> Vírus <br>
+                        <strong>Filo:</strong> Pisuviricota <br>
+                        <strong>Classe:</strong> Flasuviricetes <br>
+                        <strong>Ordem:</strong> Amarillovirales <br>
+                        <strong>Família:</strong> Flaviviridae <br>
+                        <strong>Gênero:</strong> Flavivirus <br>
+                        <strong>Espécie:</strong> Vírus da dengue <br>
+                        <strong>Sorotipo:</strong> 1
+                      </p>
+                      <br>
+                      <p><strong>Fonte:</strong> The Native Antigen Company</p>
+                    </div>
+                  </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="doctor-card">
+
+              <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                <img src="./img/denv2.jpg" width="350" height="360" loading="lazy"
+                  alt="" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h4 card-title">DENV-2</h3>
+
+                <button class="collapsible">Leia mais</button>
+                  <div class="content2">
+                    <div class="card-text text">
+                      <p>
+                        <strong>Reino:</strong> Vírus <br>
+                        <strong>Filo:</strong> Pisuviricota <br>
+                        <strong>Classe:</strong> Flasuviricetes <br>
+                        <strong>Ordem:</strong> Amarillovirales <br>
+                        <strong>Família:</strong> Flaviviridae <br>
+                        <strong>Gênero:</strong> Flavivirus <br>
+                        <strong>Espécie:</strong> Vírus da dengue <br>
+                        <strong>Sorotipo:</strong> 2
+                      </p>
+                      <br>
+                      <p><strong>Fonte:</strong> The Native Antigen Company</p>
+                    </div>
+                  </div>
+
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="doctor-card">
+
+              <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                <img src="./img/denv3.jpg" width="350" height="360" loading="lazy"
+                  alt="" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h4 card-title">DENV-3</h3>
+
+                <button class="collapsible">Leia mais</button>
+                  <div class="content2">
+                    <div class="card-text text">
+                      <p>
+                        <strong>Reino:</strong> Vírus <br>
+                        <strong>Filo:</strong> Pisuviricota <br>
+                        <strong>Classe:</strong> Flasuviricetes <br>
+                        <strong>Ordem:</strong> Amarillovirales <br>
+                        <strong>Família:</strong> Flaviviridae <br>
+                        <strong>Gênero:</strong> Flavivirus <br>
+                        <strong>Espécie:</strong> Vírus da dengue <br>
+                        <strong>Sorotipo:</strong> 3
+                      </p>
+
+                      <br>
+                      <p><strong>Fonte:</strong> The Native Antigen Company</p>
+                    </div>
+                  </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="doctor-card">
+
+              <figure class="card-banner img-holder" style="--width: 350; --height: 360;">
+                <img src="./img/denv4.jpg" width="350" height="360" loading="lazy"
+                  alt="" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h4 card-title">DENV-4</h3>
+
+                <button class="collapsible">Leia mais</button>
+                  <div class="content2">
+                    <div class="card-text text">
+                      <p>
+                        <strong>Reino:</strong> Vírus <br>
+                        <strong>Filo:</strong> Pisuviricota <br>
+                        <strong>Classe:</strong> Flasuviricetes <br>
+                        <strong>Ordem:</strong> Amarillovirales <br>
+                        <strong>Família:</strong> Flaviviridae <br>
+                        <strong>Gênero:</strong> Flavivirus <br>
+                        <strong>Espécie:</strong> Vírus da dengue <br>
+                        <strong>Sorotipo:</strong> 4
+                      </p>
+
+                      <br>
+                      <p><strong>Fonte:</strong> The Native Antigen Company</p>
+                    </div>
+                  </div>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+
+
+
+
+   <!-- 
+      - #VETOR DA DOENÇA 1
+    -->
+
+    <section class="section about" id="vetor" aria-labelledby="about-label-1">
+      <div class="container">
+        
+
+        <figure class="about-banner">
+          <img src="./img/vetor1-principal.png" width="540" height="540" loading="lazy" alt="Vetor 1"
+            class="w-100">
+            <br>
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Canva </p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Vetor da dengue</p>
+          <h2 class="h2 section-title">Aedes aegypti</h2>
+
+          <p class="section-text text">
+            <strong>Reino:</strong> Animalia <br>
+            <strong>Filo:</strong> Arthropoda <br>
+            <strong>Classe:</strong> Insecta <br>
+            <strong>Ordem:</strong> Diptera <br>
+            <strong>Família:</strong> Culicidae<br>
+            <strong>Gênero:</strong> Aedes <br>
+            <strong>Espécie:</strong> Aedes aegypti
+
+          </p>
+
+          <ul class="about-list">
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/ciclo1.png" width="80" height="80" loading="lazy"
+                  alt="Aedes albopicus">
+                </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Sobre ele</h3>
+
+                <p class="item-text text">
+                  O Aedes aegypti é conhecido por ser um vetor de várias doenças, incluindo a 
+                  dengue, a febre amarela, a chikungunya e o vírus Zika. Essas doenças representam 
+                  um sério problema de saúde pública em várias regiões tropicais e subtropicais do mundo.
+                </p>
+              </div>
+            </li>
+ 
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--VETOR DA DOENÇA 2-->
+    <section class="section about" aria-labelledby="about-label-2">
+      <div class="container">
+
+        <figure class="about-banner order-1">
+          <img src="./img/vetor2-principal.png" width="540" height="540" loading="lazy" alt="Vetor 2"
+            class="w-100">
+            <br>
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Divulgação/Saúde é Vital </p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Vetor da dengue</p>
+          <h2 class="h2 section-title">Aedes albopictus</h2>
+
+          <p class="section-text text">
+            <strong>Reino:</strong> Animalia <br>
+            <strong>Filo:</strong> Arthropoda <br>
+            <strong>Classe:</strong> Insecta <br>
+            <strong>Ordem:</strong> Diptera <br>
+            <strong>Família:</strong> Culicidae <br>
+            <strong>Gênero:</strong> Aedes <br>
+            <strong>Espécie:</strong> Aedes albopictus
+          </p>
+
+          <ul class="about-list">
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/vetor2.png" width="80" height="80" loading="lazy"
+                  alt="Aedes albopicus">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Sobre ele</h3>
+
+                <p class="item-text text">
+                  O Aedes albopictus, também conhecido como mosquito-tigre, é outro 
+                  mosquito importante em termos de saúde pública. Essa espécie, assim
+                  como o Aedes aegypti, são considerados vetores importantes dessas doenças, 
+                  pois se alimentam de sangue humano.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    
+
+
+
+
+    <!-- 
+            - TRANSMISSÃO (about)
+          -->
+    
+          <section class="section about" id="transmissao" aria-labelledby="about-label-2">
+            <div class="container">
+    
+              <figure class="about-banner order-1">
+                <img src="./img/transmissao-principal.png" width="540" height="540" loading="lazy" alt="Transmissão"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Sérgio Castro / Estadão</p>
+              </figure>
+    
+              <div class="about-content">
+    
+                <h2 class="h2 section-title">Transmissão </h2>
+    
+                <p class="section-text text">
+                </p>
+    
+                <ul class="about-list">
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo1.png" width="80" height="80" loading="lazy"
+                        alt="Wash Your Hands For 20sec">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Através do vetor</h3>
+    
+                      <p class="item-text text">
+                        A única forma de transmissão da doença ocorre de pessoa para mosquito e de mosquito
+                        para pessoa. O mosquito se alimenta de uma pessoa infectada 
+                      </p>
+                    </div>
+                  </li>
+    
+                </ul>
+    
+              </div>
+    
+            </div>
+          </section>
+
+
+
+
+
+          <!-- 
+      - #CICLO DA DOENÇA
+    -->
+
+    <section class="section about" id="ciclo" aria-labelledby="about-label-1">
+      <div class="container">
+        
+
+        <figure class="about-banner">
+          <img src="./img/ciclo-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100">
+            <br>
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Milenne Souza de Lima / CIEVS/RS</p>
+        </figure>
+
+        <div class="about-content">
+
+          <h2 class="h2 section-title">Ciclo da doença</h2>
+
+          <p class="section-text text">
+          </p>
+
+          <ul class="about-list">
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/ciclo1.png" width="80" height="80" loading="lazy"
+                    alt="Mosquito infectado">
+                </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Mosquito infectado</h3>
+
+                <p class="item-text text">
+                  Quando a fêmea do mosquito se alimenta do sangue de uma pessoa infectada, ele 
+                  também se torna infectado. A partir desse momento, o vírus se multiplica dentro 
+                  do mosquito, passando por um momento de incubação.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/ciclo2.png" width="80" height="80" loading="lazy"
+                    alt="Mosquito transmissor">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Mosquito transmissor</h3>
+
+                <p class="item-text text">
+                  Depois do período de incubação, o mosquito torna-se um vetor transmissor. Ao picar
+                  uma pessoa saudável, ele injeta sua saliva, que contém vírus da dengue. O vírus 
+                  entra na corrente sanguínea da pessoa e começa a se replicar.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo3.png" width="80" height="80" loading="lazy"
+                        alt="">
+                    </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Reinício</h3>
+
+                <p class="item-text text">
+                  Se a pessoa infectada por picada novamente, inicia-se um novo ciclo de transmissão da dengue.
+ 
+                </p>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+    
+    
+    
+    
+
+
+
+      <!-- 
+        - SINTOMAS (service)
+      -->
+
+      <section id="sintomas" class="section service has-bg-image" style="background-image: url('./img/sintoma-dengue.png');"
+        aria-labelledby="service-label-1">
+        <div class="container">
+
+          <h2 class="h2 section-title" id="service-label-1">Sintomas da dengue</h2>
+
+          <p class="section-text text">
+            É importante saber que a dengue pode progredir para a forma grave, que apresentam sintomas como choque, falta de ar, sangramento intenso e/ou complicações graves nos órgãos.  A doença, quando não está na fase mais grave, pode ser assintomática ou apresentar alguns dos seguintes sintomas: 
+
+          </p>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 130; --height: 130;">
+                  <img src="./img/febre.png" width="130" height="130" loading="lazy"
+                    alt="Febre alta">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Febre alta</h3>
+
+                  <p class="card-text text">Sintoma frequente; a temperatura pode ser maior ou igual a 38°C.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/dor-na-articulacao.png" width="110" height="110" loading="lazy"
+                    alt="Dores no corpo">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Dores no corpo</h3>
+
+                  <p class="card-text text">Consistem em dores intensas nos músculos e nas articulações.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/picada-de-mosquito.png" width="110" height="110" loading="lazy"
+                    alt="Erupções cutâneas">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Erupções cutâneas</h3>
+
+                  <p class="card-text text">
+                    Algumas pessoas infectadas podem desenvolver essas erupções (manchas vermelhas na pele).
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/dor-abdominal.png" width="110" height="110" loading="lazy"
+                    alt="Dor abdominal intensa">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Dor abdominal intensa</h3>
+
+                  <p class="card-text text">O desconforto abdominal contínuo também podem ser acompanhado por náuseas e vômitos.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/falta-de-apetite.png" width="110" height="110" loading="lazy"
+                    alt="Sensação de mal estar">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Sensação de mal estar</h3>
+
+                  <p class="card-text text">
+                    Os sintomas podem vir acompanhados de falta de apetite, fraqueza e fadiga.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                  <img src="./img/hematocrito.png" width="110" height="110" loading="lazy"
+                    alt="Aumento do hematócrito">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Aumento do hematócrito</h3>
+
+                  <p class="card-text text">
+                    O exame que mede a porcentagem de hemácias no sangue.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - TRATAMENTO (about)
+      -->
+
+      <section class="section about" id="tratamento" aria-labelledby="about-label-2">
+        <div class="container">
+
+          <figure class="about-banner order-1">
+            <img src="./img/tratamento-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+              class="w-100">
+              <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Kléber Luz</p>
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">Tratamento </h2>
+
+            <p class="section-text text">
+              Ainda não existe um tratamento específico para a dengue. Porém, existem medidas que 
+              são adotadas no tratamento, como:
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/trat1.png" width="80" height="80" loading="lazy"
+                    alt="Hidratação">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Hidratação</h3>
+
+                  <p class="item-text text">
+                    É recomendado a ingestão de líquidos em abundância, como água, sucos, chás ou soro caseiro, 
+                    para repor o líquido perdido devido à febre e à transpiração excessiva.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/ciclo2.png" width="80" height="80" loading="lazy"
+                    alt="Repouso">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Repouso</h3>
+
+                  <p class="item-text text">
+                    Descansar adequadamente para o corpo se recuperar e combater a doença.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/ciclo3.png" width="80" height="80" loading="lazy"
+                    alt="Controle da febre">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Controle da febre</h3>
+
+                  <p class="item-text text">
+                    Alguns medicamentos são utilizados para reduzir a febre a aliviar os sintomas. 
+                    No entanto, alguns deles devem ser evitados, como a aspirina e ibuprofeno, pois
+                    podem aumentar o risco de complicações hemorrágicas.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/trat4.png" width="80" height="80" loading="lazy"
+                    alt="Caso da dengue hemorrágica">
+                </figure>
+
+                <div class="item-content">
+                  <h3 class="h4 item-title">Caso da dengue hemorrágica</h3>
+
+                  <p class="item-text text">
+                    O tratamento hospitalar pode envolver medidas adicionais, como a reposição de 
+                    líquidos intravenosos, transfusões de sangue e cuidados intensivos.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+<!-- 
+            - MEDIDAS PROFILÁTICAS (safety)
+          -->
+    
+          <section id="medidas" class="section safety" aria-labelledby="safety-label">
+            <div class="container">
+    
+              <h2 class="h2 section-title" id="safety-label">Medidas profiláticas</h2>
+    
+              <p class="section-text text">
+                Algumas ações que incluem o controle da população dos vetores ou a contaminação da doença são:
+              </p>
+    
+              <ol class="safety-list">
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 190; --height: 190;">
+                    <img src="./img/agua-parada.png" width="170" height="170" loading="lazy" alt="Eliminar focos de água parada"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">1</span>
+    
+                  <h3 class="h4 item-title">Eliminar focos de água parada</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/criadouros-de-mosquito.png" width="170" height="170" loading="lazy" alt="Redução de criadouros de mosquitos"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">2</span>
+    
+                  <h3 class="h4 item-title">Redução de criadouros de mosquitos</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/repelentes.png" width="170" height="190" loading="lazy"
+                      alt="Uso de repelentes" class="img">
+                  </figure>
+    
+                  <span class="number">3</span>
+    
+                  <h3 class="h4 item-title">Uso de repelentes</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/roupas-protecao.png" width="170" height="170" loading="lazy"
+                      alt="Uso de roupas protetoras" class="img">
+                  </figure>
+    
+                  <span class="number">4</span>
+    
+                  <h3 class="h4 item-title">Uso de roupas protetoras</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/tela-porta-janela.png" width="170" height="170" loading="lazy"
+                      alt="Manter janelas com telas de proteção" class="img">
+                  </figure>
+    
+                  <span class="number">5</span>
+    
+                  <h3 class="h4 item-title">Manter janelas com telas de proteção</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/mosquiteiros.png" width="170" height="170" loading="lazy"
+                      alt="Usar mosquiteiros" class="img">
+                  </figure>
+    
+                  <span class="number">6</span>
+    
+                  <h3 class="h4 item-title">Usar mosquiteiros em berços e camas</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/larvicidas.png" width="170" height="170" loading="lazy" alt="Aplicar larvicidas"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">7</span>
+    
+                  <h3 class="h4 item-title">Aplicar larvicidas em possíveis criadouros</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/folhas-escoamento.png" width="170" height="170" loading="lazy"
+                      alt="Remover folhas que atrapalham o escoamento" class="img">
+                  </figure>
+    
+                  <span class="number">8</span>
+    
+                  <h3 class="h4 item-title">Remover folhas que atrapalham o escoamento da água</h3>
+                </li>
+    
+              </ol>
+    
+            </div>
+          </section>
+
+
+          <!--
+            REFERÊNCIAS
+          -->
+          <button id="ref" class="collapsible">Referências</button>
+          <div class="content1">
+              <div class="card-text text">
+                  <br>
+                  <p id="ref-par">DIAS, Larissa B. A.. <strong>Dengue: transmissão, aspectos clínicos, diagnóstico e tratamento</strong>. Disponível em: https://www.revistas.usp.br/rmrp/article/view/171. Acesso em: 29 abr. 2023.</p>
+                  <br>
+                  <p id="ref-par">RITA, Ana Bispo. <strong>Dengue</strong>. Disponível em: https://agencia.fiocruz.br/dengue-0. Acesso em: 29 abr. 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Biblioteca Virtual em. <strong>Dia Nacional de Combate à Dengue</strong>. Disponível em: https://bvsms.saude.gov.br/19-11-dia-nacional-de-combate-a-dengue/. Acesso em: 12 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Ministério da. <strong>Dengue</strong>. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dengue. Acesso em: 29 abr. 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Organização Pan-Americana da. <strong>Dengue</strong>. Disponível em: https://www.paho.org/pt/topicos/dengue. Acesso em: 12 maio 2023.</p>
+              </div>
+          </div>
+
+          <br><br><br><br>
+
+      </article>
+    </main>
+
+
+
+    <!-- 
+    - #FOOTER-->
+ 
+
+    <footer class="footer has-bg-image" id="rodape">
+      <div>
+        <div class="footer-bottom">
+          <img class="logo" src="https://dados.ifrn.edu.br/base/images/logo-ifrn.png">
+        </div>
+  
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          <strong>Desenvolvido pelas alunas:</strong>
+          <br>Camile Joice Rocha do Nascimento;
+            <br> Emine Aissa Franco do Nascimento;
+            <br>Maria das Vitórias da Costa Araújo;
+            <br> Raissa Laura Plácido Justino.
+            <br>
+            <br>
+          <strong>Orientador:</strong> Álvaro Hermano da Silva.
+          <br>
+          <strong>Coorientador(a):</strong>Thayse Azevedo da Silva.
+        </p>
+      </div>
+  
+      </div>
+      <div style="text-align: center;"> &copy; 2023 IFRN- Campus Parnamirim.<br> </div>
+      <br><br>
+    </footer>
+
+
+  
+  
+  <script src="dengue.js"></script>
+
+  <!--DO MENU-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+          });
+
+          $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+          });
+
+          $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+          });
+
+        });
+    </script>
+
+</body>
+
+</html>

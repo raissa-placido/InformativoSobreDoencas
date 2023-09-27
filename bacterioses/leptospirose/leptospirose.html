@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Leptospirose</title>
+  <link href="leptospirose.css" rel="stylesheet" type="text/css" />
+
+  <link rel="icon" type="image/png" href="./img/logotcc.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+</head>
+
+<body id=“top”>
+
+  <header class="cabecalho">
+    <div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="side-bar active">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="#intro"><i class="fas fa-desktop"></i>Introdução</a></div>
+          <div class="item"><a href="#agente"><i class="fas fa-notes-medical"></i>Agente etiológico</a></div>
+          <div class="item"><a href="#vetor"><i class="fas fa-syringe"></i>Vetor</a></div> <!--se tiver-->
+          <div class="item"><a href="#transmissao"><i class="fas fa-vial"></i>Transmissão</a></div>
+          <div class="item"><a href="#ciclo"><i class="fas fa-hospital"></i>Ciclo da doença</a></div>
+          <div class="item"><a href="#sintomas"><i class="fas fa-stethoscope"></i>Sintomas</a></div>
+          <div class="item"><a href="#tratamento"><i class="fas fa-capsules"></i>Tratamento</a></div>
+          <div class="item"><a href="#medidas"><i class="fas fa-thumbtack"></i>Medidas profiláticas</a></div>
+          
+          <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Homepage</a></div>
+          <div class="item"><a href="#"><i class="fas fa-microscope"></i>Microscópio virtual</a></div>
+          <div class="item"><a href="#"><i class="fas fa-chart-line"></i>Dados epidemiológicos</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="titulo-header">Leptospirose</p>
+    </div>
+
+    <div>
+      <button type="button" id="btnAumentar">A+</button>
+    </div>
+
+    <div>
+      <button type="button" id="btnDiminuir">A-</button>
+    </div>
+    
+    <div>
+      <input type="checkbox" name="change-theme" id="change-theme" />
+      <label for="change-theme">
+        <i class="bi bi-sun"></i>
+        <i class="bi bi-moon"></i
+      ></label>
+    </div>
+
+    
+  </header>
+
+
+    <!--CAPA-->
+  <div class="fundo">
+    <div class="header-content">
+      <h1>LEPTOSPIROSE</h1>
+      <div class="line"></div>
+    </div>
+  </div>
+
+
+    <!-- LIBRAS -->
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+
+
+<main>
+      <article>
+
+      
+      <!--INTRODUÇÃO-->
+    <section class="section about" id="intro" aria-labelledby="about-label-2">
+      <div class="container">
+
+        <figure class="about-banner order-1">
+          <img src="./img/intro.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100">
+            <br>
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Maclifethai </p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Bem vindos!</p>
+          <h2 class="h2 section-title">Conheça a leptospirose:</h2>
+
+          <div class="item-content">
+            <h3 class="h4 item-title"></h3>
+
+            <p class="item-text text">
+             Leptospirose é uma bacteriose (doença infecciosa causada por uma bactéria), 
+             sua ocorrência está relacionada às condições precárias de infraestrutura 
+             sanitária e o alto número de roedores infectados. 
+            </p>
+            <br>
+            <p class="item-text text">
+             No Brasil, os primeiros casos de leptospirose humana ocorreram em 1917, 
+             mesmo sendo conhecidos desde o século XIX. Acredita-se que a bactéria 
+             chegou ao Brasil com roedores nos navios negreiros.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+             <!-- 
+      - #Agente etiológico 
+    -->
+
+    <section class="section about" id="agente" aria-labelledby="about-label-1">
+      <div class="container">
+        
+
+        <figure class="about-banner">
+          <img src="./img/Leptospira-interrogans.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100">
+            <br>
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Sciense Daily </p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Agente etiológico</p>
+          <h2 class="h2 section-title">Leptospira interrogans</h2>
+
+          <p class="section-text text">
+            <strong>Reino:</strong> Bacteria <br>
+            <strong>Filo:</strong> Spirochaetes <br>
+            <strong>Classe:</strong> Spirochaetes<br>
+            <strong>Ordem:</strong> Spirochaetales <br>
+            <strong>Família:</strong> Leptospiraceae <br>
+            <strong>Gênero:</strong> Leptospira <br>
+            <strong>Espécie:</strong> Leptospira interrogans
+
+          </p>
+
+          <ul class="about-list">
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/sobre.png" width="80" height="80" loading="lazy" alt="Human Contact">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Sobre o agente:</h3>
+
+                <p class="item-text text">
+                  Possui uma forma espiralada (chamada de espiroqueta), sendo uma bactéria alongada e fina, com cerca de 0,1 a 0,2
+                  micrômetros de diâmetro e 10 a 20 micrômetros de comprimento.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/infeccao.png" width="80" height="80" loading="lazy" alt="Air Transmission">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Quem ela infectada?</h3>
+
+                <p class="item-text text">
+                  A bactéria infecta cães, bovinos, suínos, animais selvagens e especialmente os roedores. 
+                  Os seres humanos são hospedeiros acidentais.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/descoberta.png" width="80" height="80" loading="lazy"
+                  alt="Contaminated Objects">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Descoberta</h3>
+
+                <p class="item-text text">
+                  Em 1886, Adolph Weil (imagem ao lado) observou a presença de espiroquetas em tecidos de pacientes. Em 1907, 
+                  o médico sueco Albert Ivar Wickström isolou e identificou a bactéria.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    
+    
+    
+    
+    
+        <!-- 
+            - VETOR DA DOENÇA
+          -->
+    
+          <section id="doenca" class="section about" id="vetor" aria-labelledby="about-label-2">
+            <div class="container">
+    
+              <figure class="about-banner order-1">
+                <img src="./img/vetor-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> iStock </p>
+              </figure>
+    
+              <div class="about-content">
+    
+                <p class="about-subtitle" id="about-label-1">Vetor da doença</p>
+                <h2 class="h2 section-title">Rattus norvegicus</h2>
+    
+                <p class="section-text text">
+                  <strong>Reino:</strong> Animalia<br>
+                  <strong>Filo:</strong> Chordata <br>
+                  <strong>Classe:</strong> Mammalia <br>
+                  <strong>Ordem:</strong> Rodentia<br>
+                  <strong>Família:</strong> Muridae <br>
+                  <strong>Gênero:</strong> Rattus <br>
+                  <strong>Espécie:</strong> Rattus norvegicus
+                </p>
+    
+                <ul class="about-list">
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/vetor.png" width="80" height="80" loading="lazy"
+                        alt="Wash Your Hands For 20sec">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Sobre ele:</h3>
+    
+                      <p class="item-text text">
+                        São conhecidos como rato-marrom, rato-de-esgoto ou rato-doméstico, 
+                        são de origem asiática mas podem ser encontrados em todo o mundo. 
+                        São de pequeno porte, com um comprimento médio de cerca de 20 cm, 
+                        possuem pelagem áspera e apresentam tons de marrom, cinza ou preto.
+                      </p>
+                    </div>
+                  </li>
+    
+
+    
+                </ul>
+    
+              </div>
+    
+            </div>
+          </section>
+
+
+
+
+
+          <!-- 
+            - TRANSMISSÃO
+          -->
+          <section class="section about" id="transmissao" aria-labelledby="about-label-1">
+            <div class="container">
+      
+              <figure class="about-banner">
+                  <img src="./img/transmissao-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Sciense Daily </p>
+              </figure>
+
+              <div class="about-content">
+
+                  <h2 class="h2 section-title">Transmissão</h2>
+
+                  <ul class="about-list">
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/transm1.png" width="80" height="80" loading="lazy"
+                          alt="Wash Your Hands For 20sec">
+                        </figure>
+  
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Contato com água contaminada</h3>
+  
+                          <p class="item-text text">
+                            A principal via de transmissão é através do contato com água 
+                            doce contaminada pela urina de animais infectados. Isso pode 
+                            ocorrer ao nadar ou tomar banho em água contaminada, ou durante 
+                            atividades como pesca ou trabalho em áreas alagadas.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/transm2.png" width="80" height="80" loading="lazy"
+                            alt="Cover Nose and Mouth When Sneezing">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Contato direto com urina contaminada</h3>
+        
+                          <p class="item-text text">
+                            O contato direto é uma das principais formas de transmissão. 
+                            Isso pode ocorrer ao entrar em contato com a urina de animais 
+                            infectados em ambientes contaminados, como esgotos, áreas urbanas 
+                            com alta presença de roedores, depósitos de lixo ou áreas rurais 
+                            onde animais infectados vivem.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/transm3.png" width="80" height="80" loading="lazy"
+                            alt="Wear A Mask If Available">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Ingestão de água ou alimentos contaminados</h3>
+        
+                          <p class="item-text text">
+                            Pode ocorrer quando a água não tratada, alimentos crus ou mal lavados são consumidos após ter contato com a urina contaminada.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/transm4.png" width="80" height="80" loading="lazy"
+                            alt="Wear A Mask If Available">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Transmissão ocupacional</h3>
+        
+                          <p class="item-text text">
+                            Pessoas que trabalham em ambientes com maior risco de exposição à 
+                            urina de animais infectados, como agricultores, veterinários, 
+                            trabalhadores de esgoto, coletores de lixo e profissionais de limpeza, 
+                            podem estar mais suscetíveis à transmissão da leptospirose.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/transm5.png" width="80" height="80" loading="lazy"
+                            alt="Wear A Mask If Available">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Transmissão direta</h3>
+        
+                          <p class="item-text text">
+                            A transmissão de pessoa para pessoa é rara e ocorre apenas em 
+                            casos muito específicos, como a transmissão sexual ou a 
+                            transmissão vertical de mãe para filho durante a gravidez.
+                          </p>
+                        </div>
+                      </li>
+
+                  </ul>
+
+              </div>
+
+            </div>
+          </section>
+
+
+
+          <!-- 
+            - CICLO DA DOENÇA
+          -->
+    
+          <section id="doenca" class="section about" id="ciclo" aria-labelledby="about-label-2">
+            <div class="container">
+    
+              <figure class="about-banner order-1">
+                <img src="./img/ciclo-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Autoria própria </p>
+              </figure>
+    
+              <div class="about-content">
+    
+                <h2 class="h2 section-title">Ciclo da doença</h2>
+
+                <p class="section-text text">
+                  O ciclo da leptospirose é mantido pela interação entre três componentes principais: ambiente aquático, animais hospedeiros e os seres humanos.
+                </p>
+    
+    
+                <ul class="about-list">
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo1.png" width="80" height="80" loading="lazy"
+                        alt="Wash Your Hands For 20sec">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Ambiente aquático</h3>
+    
+                      <p class="item-text text">
+                        A bactéria Leptospira sobrevive e se multiplica em ambientes aquáticos, 
+                        como água doce, solo úmido e áreas alagadas. Os animais infectados 
+                        com leptospirose eliminam a bactéria em sua urina, que pode contaminar 
+                        a água ou o solo ao seu redor.
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo2.png" width="80" height="80" loading="lazy"
+                        alt="Cover Nose and Mouth When Sneezing">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Animais hospedeiros</h3>
+    
+                      <p class="item-text text">
+                        Os animais, incluindo roedores, cães, gatos, gado, suínos e animais 
+                        selvagens, podem ser infectados pela Leptospira e atuar como 
+                        hospedeiros da bactéria. Eles podem abrigar a bactéria em seus 
+                        rins e eliminá-la pela urina, mesmo que não apresentem sintomas 
+                        da doença. Os animais infectados servem como reservatórios da 
+                        leptospirose e contribuem para a disseminação da bactéria no ambiente.  
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo3.png" width="80" height="80" loading="lazy"
+                        alt="Wear A Mask If Available">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Seres humanos</h3>
+    
+                      <p class="item-text text">
+                        A transmissão ocorre principalmente por meio da penetração da bactéria 
+                        através de cortes ou lesões na pele, membranas mucosas ou por ingestão 
+                        de água ou alimentos contaminados. Os seres humanos podem desenvolver 
+                        a doença e, assim como os animais, podem se tornar hospedeiros da Leptospira.
+                      </p>
+                    </div>
+                  </li>
+    
+                  
+    
+                </ul>
+    
+              </div>
+    
+            </div>
+          </section>
+
+    
+    
+    
+          <!-- 
+            - SINTOMAS (service)
+          -->
+    
+          <section id="sintomas" class="section service has-bg-image" style="background-image: url('./img/sintoma-leptospirose.png')"
+            aria-labelledby="service-label-1">
+            <div class="container">
+    
+              <h2 class="h2 section-title" id="service-label-1">Sintomas da leptospirose</h2>
+    
+              <p class="section-text text">
+                Os sintomas da leptospirose podem variar de leves a graves, confira alguns deles abaixo:
+              </p>
+    
+              <ul class="service-list">
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 130; --height: 130;">
+                      <img src="./img/febre.png" width="130" height="130" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Febre alta</h3>
+    
+                      <p class="card-text text">
+                        Um dos primeiros sintomas da doença e geralmente é alta, acima de 38°C.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/sintoma-muscular.png" width="110" height="110" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Dores musculares</h3>
+    
+                      <p class="card-text text">
+                        Podem ser intensas e serem confundidas com as dores da gripe, por exemplo.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/dor-de-cabeca.png" width="110" height="110" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Dores de cabeça</h3>
+    
+                      <p class="card-text text">
+                        A pessoa infectada pode apresentar dores intensas, semelhantes a enxaquecas.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/ictericia.png" width="110" height="110" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Icterícia</h3>
+    
+                      <p class="card-text text">
+                        Em casos mais graves, os olhos ficam amarelados (devido ao comprometimento do fígado).
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/doenca-de-weil.png" width="110" height="110" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">“Doença de Weil”</h3>
+    
+                      <p class="card-text text">
+                        Forma mais grave da doença, pode causar insuficiência renal, hepática e respiratória.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/vomito.png" width="110" height="110" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Distúrbios gastrointestinais</h3>
+    
+                      <p class="card-text text">
+                        Podem ser acompanhados por náuseas, diarreias e vômitos.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+              </ul>
+    
+            </div>
+          </section>
+    
+    
+    
+    
+          <!-- 
+            - TRATAMENTO (about)
+          -->
+    
+          <section class="section about" id="tratamento" aria-labelledby="about-label-2">
+            <div class="container">
+    
+              <figure class="about-banner order-1">
+                <img src="./img/tratamento-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100"> 
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Tua Saúde </p>
+              </figure>
+    
+              <div class="about-content">
+    
+                <h2 class="h2 section-title">Tratamento</h2>
+    
+                <p class="section-text text">
+                </p>
+    
+                <ul class="about-list">
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/trat1.png" width="80" height="80" loading="lazy"
+                        alt="Wear A Mask If Available">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Uso de antibióticos</h3>
+    
+                      <p class="item-text text">
+                        Antibióticos são o principal tratamento para a leptospirose, e a escolha do medicamento deve levar 
+                        em conta a gravidade da doença, a idade do paciente e as condições médicas. 
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/trat2.png" width="80" height="80" loading="lazy"
+                        alt="Wear A Mask If Available">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Hidratação</h3>
+    
+                      <p class="item-text text">
+                        É necessário garantir que o paciente esteja hidratado, principalmente em 
+                        casos de insuficiência renal.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/trat3.png" width="80" height="80" loading="lazy"
+                        alt="Wear A Mask If Available">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Controle dos sintomas</h3>
+    
+                      <p class="item-text text">
+                       Uso de medicamentos de suporte, para controlar febre, dores, náuseas e vômitos. 
+                      </p>
+                    </div>
+                  </li>
+    
+                </ul>
+    
+              </div>
+    
+            </div>
+          </section>
+    
+    
+    
+    
+          <!-- 
+            - MEDIDAS PROFILÁTICAS (safety)
+          -->
+    
+          <section id="medidas" class="section safety" aria-labelledby="safety-label">
+            <div class="container">
+    
+              <h2 class="h2 section-title" id="safety-label">Medidas profiláticas</h2>
+    
+              <p class="section-text text">
+                 Confira algumas das medidas preventivas contra a leptospirose para reduzir os casos da doença:
+              </p>
+    
+              <ol class="safety-list">
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 190; --height: 190;">
+                    <img src="./img/agua-nao-tratada.png" width="170" height="170" loading="lazy" alt="Evitar contato com água contaminada"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">1</span>
+    
+                  <h3 class="h4 item-title">Evitar contato com água contaminada</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/lavar-mao.png" width="170" height="170" loading="lazy" alt="Lavar bem as mãos"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">2</span>
+    
+                  <h3 class="h4 item-title">Lavar bem as mãos, após contato com água contaminada</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/proteger-feridas.png" width="170" height="190" loading="lazy"
+                      alt="Proteger feridas e cortes" class="img">
+                  </figure>
+    
+                  <span class="number">3</span>
+    
+                  <h3 class="h4 item-title">Proteger feridas e cortes antes de entrar em contato com água contaminada</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/medidas-contra-roedores.png" width="170" height="170" loading="lazy"
+                      alt="Medidas para controle de roedores" class="img">
+                  </figure>
+    
+                  <span class="number">4</span>
+    
+                  <h3 class="h4 item-title">Medidas para controle de roedores em áreas próximas a residências</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/limpeza-regular.png" width="170" height="170" loading="lazy"
+                      alt="Limpeza regular de áreas propensas a abrigar roedores" class="img">
+                  </figure>
+    
+                  <span class="number">5</span>
+    
+                  <h3 class="h4 item-title">Limpeza regular de áreas propensas a abrigar roedores</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/vacina.png" width="170" height="170" loading="lazy"
+                      alt="Vacinação" class="img">
+                  </figure>
+    
+                  <span class="number">6</span>
+    
+                  <h3 class="h4 item-title">Vacinação contra a leptospirose</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/agua-nao-tratada.png" width="170" height="170" loading="lazy" alt="Evitar beber água de fontes desconhecidas"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">7</span>
+    
+                  <h3 class="h4 item-title">Evitar beber água de fontes desconhecidas</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/beber-agua-potavel.png" width="170" height="170" loading="lazy"
+                      alt="Água potável" class="img">
+                  </figure>
+    
+                  <span class="number">8</span>
+    
+                  <h3 class="h4 item-title">Beba água potável</h3>
+                </li>
+    
+              </ol>
+    
+            </div>
+          </section>
+
+
+
+          <!--
+            REFERÊNCIAS
+          -->
+          <button id="ref" class="collapsible">Referências</button>
+          <div class="content1">
+              <div class="card-text text">
+                  <br>
+                  <p id="ref-par">CRUZ, Fundação Oswaldo. <strong>Leptospirose: sintomas, transmissão e prevenção</strong>. Disponível em: https://www.bio.fiocruz.br/index.php/br/sintomas-transmissao-e-prevencao. Acesso em: 30 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">MARTELI, Alice Nardoni. <strong>Análise espacial da leptospirose no Brasil</strong>. Disponível em: https://www.scielo.br/j/sdeb/a/tpgTM4R7YcFTrPMjJ3wKmyF/#:~:text=As%20primeiras%20notifica%C3%A7%C3%B5es%20de%20casos,com%20a%20febre%20amarela%201. Acesso em: 29 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Ministério da. <strong>Leptospirose</strong>. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/l/leptospirose. Acesso em: 30 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">WIKIPÉDIA. <strong>Leptospira (bactéria)</strong>. Disponível em: https://pt.wikipedia.org/wiki/Leptospira_(bact%C3%A9ria). Acesso em: 30 maio 2023.</p>
+              </div>
+          </div>
+    
+          <br><br><br><br>
+
+    </article>
+    </main>
+
+
+
+    <!-- 
+    - #FOOTER-->
+ 
+
+    <footer class="footer has-bg-image" id="rodape">
+      <div>
+        <div class="footer-bottom">
+          <img class="logo" src="https://dados.ifrn.edu.br/base/images/logo-ifrn.png">
+        </div>
+  
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          <strong>Desenvolvido pelas alunas:</strong>
+          <br>Camile Joice Rocha do Nascimento;
+            <br> Emine Aissa Franco do Nascimento;
+            <br>Maria das Vitórias da Costa Araújo;
+            <br> Raissa Laura Plácido Justino.
+            <br>
+            <br>
+          <strong>Orientador:</strong> Álvaro Hermano da Silva.
+          <br>
+          <strong>Coorientador(a):</strong>Thayse Azevedo da Silva.
+        </p>
+      </div>
+  
+      </div>
+      <div style="text-align: center;"> &copy; 2023 IFRN- Campus Parnamirim.<br> </div>
+      <br><br>
+    </footer>
+
+          
+
+  
+  <script src="leptospirose.js"></script>
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+          });
+
+          $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+          });
+
+          $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+          });
+
+        });
+    </script>
+
+
+  
+</body>
+
+</html>

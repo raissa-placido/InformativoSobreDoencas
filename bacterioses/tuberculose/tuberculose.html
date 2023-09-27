@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tuberculose</title>
+  <link href="tuberculose.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="./img/logotcc.png">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+</head>
+
+<body id=“top”>
+
+  <header class="cabecalho">
+    <div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="side-bar active">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="#intro"><i class="fas fa-desktop"></i>Introdução</a></div>
+          <div class="item"><a href="#agente"><i class="fas fa-notes-medical"></i>Agente etiológico</a></div>
+          <div class="item"><a href="#transmissao"><i class="fas fa-vial"></i>Transmissão</a></div>
+          <div class="item"><a href="#ciclo"><i class="fas fa-hospital"></i>Ciclo da doença</a></div>
+          <div class="item"><a href="#sintomas"><i class="fas fa-stethoscope"></i>Sintomas</a></div>
+          <div class="item"><a href="#tratamento"><i class="fas fa-capsules"></i>Tratamento</a></div>
+          <div class="item"><a href="#medidas"><i class="fas fa-thumbtack"></i>Medidas profiláticas</a></div>
+          
+          <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Homepage</a></div>
+          <div class="item"><a href="#"><i class="fas fa-microscope"></i>Microscópio virtual</a></div>
+          <div class="item"><a href="#"><i class="fas fa-chart-line"></i>Dados epidemiológicos</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="titulo-header">Tuberculose</p>
+    </div>
+
+    <div>
+      <button type="button" id="btnAumentar">A+</button>
+    </div>
+
+    <div>
+      <button type="button" id="btnDiminuir">A-</button>
+    </div>
+    
+    <div>
+      <input type="checkbox" name="change-theme" id="change-theme" />
+      <label for="change-theme">
+        <i class="bi bi-sun"></i>
+        <i class="bi bi-moon"></i
+      ></label>
+    </div>
+
+    
+  </header>
+
+
+    <!--CAPA-->
+  <div class="fundo">
+    <div class="header-content">
+      <h1>TUBERCULOSE</h1>
+      <div class="line"></div>
+    </div>
+  </div>
+
+
+    <!-- LIBRAS -->
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+
+
+  
+
+
+  <main>
+      <article>  
+        
+        
+    <!--INTRODUÇÃO-->
+    <section class="section about" id="intro" aria-labelledby="about-label-2">
+      <div class="container">
+
+        <figure class="about-banner order-1">
+          <img src="./img/intro.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100">
+            <br>
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Prefeitura Municipal de Fernando Pedroza </p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Bem vindos!</p>
+          <h2 class="h2 section-title">Conheça a tuberculose:</h2>
+
+          <div class="item-content">
+            <h3 class="h4 item-title"></h3>
+
+            <p class="item-text text">
+            A tuberculose é uma bacteriose (doença infecciosa causada por uma 
+            bactéria) que afeta alguns órgãos, principalmente os pulmões. O 
+            Brasil está ocupando o <strong>17° lugar</strong> entre os 22 países 
+            responsáveis por 82% do total de casos da doença no mundo.
+            </p>
+            <br>
+            <p class="item-text text">
+             O dia 24/03 é considerado Dia Mundial de Combate à Tuberculose, 
+             a data foi criada em 1982 pela Organização Mundial da Saúde (OMS), 
+             uma homenagem aos 100 anos da descoberta da bactéria causadora da 
+             tuberculose.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+    
+        <!-- 
+        - #AGENTE ETIOLÓGICO
+      -->
+  
+      <section class="section about" id="agente" aria-labelledby="about-label-1">
+        <div class="container">
+          
+  
+          <figure class="about-banner">
+            <img src="./img/Mycobacterium_tuberculosis.png" width="540" height="540" loading="lazy" alt="about banner"
+              class="w-100">
+              <br>
+              <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> CDC/ Dr. Ray Butler; Janice Carr </p>
+          </figure>
+  
+          <div class="about-content">
+  
+            <p class="about-subtitle" id="about-label-1">Agente etiológico</p>
+            <h2 class="h2 section-title">Mycobacterium tuberculosis</h2>
+  
+            <p class="section-text text">
+              <strong>Reino:</strong> Bacteria <br>
+              <strong>Filo:</strong> Actinobacteria <br>
+              <strong>Classe:</strong> Actinobacteria <br>
+              <strong>Ordem:</strong> Actinomycetales <br>
+              <strong>Família:</strong> Mycobacteriaceae<br>
+              <strong>Gênero:</strong> Mycobacterium <br>
+              <strong>Espécie:</strong> Mycobacterium tuberculosis
+  
+            </p>
+  
+            <ul class="about-list">
+  
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/sobre.png" width="80" height="80" loading="lazy" alt="Sobre">
+                </figure>
+  
+                <div class="item-content">
+                  <h3 class="h4 item-title">Sobre</h3>
+  
+                  <p class="item-text text">
+                    A tuberculose é uma das doenças infecciosas mais antigas e persistentes da humanidade.
+                  </p>
+                </div>
+              </li>
+  
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/descoberta.png" width="80" height="80" loading="lazy" alt="Descoberta">
+                </figure>
+  
+                <div class="item-content">
+                  <h3 class="h4 item-title">Descoberta</h3>
+  
+                  <p class="item-text text">
+                    Foi descoberta em 1882 pelo microbiologista alemão Robert Koch.
+                  </p>
+                </div>
+              </li>
+  
+              <li class="about-item">
+                <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                  <img src="./img/alemdisso.png" width="80" height="80" loading="lazy"
+                    alt="Além disso">
+                </figure>
+  
+                <div class="item-content">
+                  <h3 class="h4 item-title">Além disso...</h3>
+  
+                  <p class="item-text text">
+                    A doença afeta principalmente os pulmões, mas também pode afetar outros órgãos, como os rins, ossos e cérebro.
+                  </p>
+                </div>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+        </div>
+      </section>
+  
+      
+
+      <!--A doença não apresenta vetor!!-->
+
+    
+    
+    
+    
+    
+        <!-- 
+            - TRANSMISSÃO (about)
+          -->
+    
+          <section class="section about" id="transmissao" aria-labelledby="about-label-2">
+            <div class="container">
+    
+              <figure class="about-banner order-1">
+                <img src="./img/transmissao-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Freepik </p>
+              </figure>
+    
+              <div class="about-content">
+    
+                <h2 class="h2 section-title">Transmissão</h2>
+    
+    
+                <ul class="about-list">
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/transm1.png" width="80" height="80" loading="lazy"
+                        alt="Wash Your Hands For 20sec">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Transmissão por gotículas</h3>
+    
+                      <p class="item-text text">
+                        Além dos aerossóis, a tuberculose também pode ser transmitida por gotículas 
+                        maiores que são expelidas quando uma pessoa infectada tosse ou espirra diretamente no rosto de outra pessoa.
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/transm2.png" width="80" height="80" loading="lazy"
+                        alt="Cover Nose and Mouth When Sneezing">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Transmissão por contato</h3>
+    
+                      <p class="item-text text">
+                        Em casos raros, a tuberculose pode ser transmitida através do contato direto com feridas abertas, lesões 
+                        ou tecidos infectados de uma pessoa com tuberculose extrapulmonar, como tuberculose cutânea.
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/transm3.png" width="80" height="80" loading="lazy"
+                        alt="Wear A Mask If Available">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Transmissão ocupacional</h3>
+    
+                      <p class="item-text text">
+                        Profissionais de saúde que têm contato frequente com pacientes infectados com tuberculose têm um risco 
+                        aumentado de contrair a doença se as precauções adequadas não forem tomadas, especialmente durante 
+                        procedimentos que geram aerossóis, como a aspiração de vias respiratórias.
+                      </p>
+                    </div>
+                  </li>
+    
+                </ul>
+    
+              </div>
+    
+            </div>
+          </section>
+
+
+
+
+
+
+          <!--CICLO DA DOENÇA -->
+
+          <section class="section about" id="ciclo" aria-labelledby="about-label-1">
+            <div class="container">
+              
+      
+              <figure class="about-banner">
+                <img src="./img/ciclo-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Vilaplana and Cardona </p>
+              </figure>
+      
+              <div class="about-content">
+
+                <h2 class="h2 section-title">Ciclo da doença</h2>
+      
+                <ul class="about-list">
+      
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo1.png" width="80" height="80" loading="lazy" alt="Human Contact">
+                    </figure>
+      
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Fonte de infecção</h3>
+      
+                      <p class="item-text text">
+                        A fonte primária de infecção é uma pessoa infectada com tuberculose pulmonar ativa. Essa pessoa 
+                        apresenta lesões nos pulmões que contêm a bactéria Mycobacterium tuberculosis. Quando a pessoa 
+                        infectada tosse, espirra, fala ou canta, as bactérias são expelidas no ar na forma de pequenas 
+                        partículas chamadas de aerossóis.
+                      </p>
+                    </div>
+                  </li>
+      
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo2.png" width="80" height="80" loading="lazy" alt="Air Transmission">
+                    </figure>
+      
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Disseminação no ambiente</h3>
+      
+                      <p class="item-text text">
+                        Os aerossóis que contêm as bactérias são liberados no ar e podem permanecer suspensos por um 
+                        período de tempo. Em ambientes fechados e mal ventilados, as partículas podem permanecer suspensas 
+                        por mais tempo, aumentando a probabilidade de inalação por pessoas saudáveis.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo3.png" width="80" height="80" loading="lazy" alt="Air Transmission">
+                    </figure>
+      
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Inalação e infecção</h3>
+      
+                      <p class="item-text text">
+                        Pessoas saudáveis que compartilham o mesmo ambiente que a fonte de infecção podem inalar 
+                        os aerossóis contendo as bactérias da tuberculose. As bactérias entram nos pulmões por 
+                        meio da inalação e podem se estabelecer nos alvéolos pulmonares.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo4.png" width="80" height="80" loading="lazy" alt="Air Transmission">
+                    </figure>
+      
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Infecção latente ou tuberculose ativa</h3>
+      
+                      <p class="item-text text">
+                        Após a inalação das bactérias, duas situações podem ocorrer. A maioria das pessoas desenvolve 
+                        uma infecção latente por tuberculose, o que significa que as bactérias estão presentes em seus 
+                        corpos, mas o sistema imunológico as mantém sob controle e não há sintomas da doença. No entanto, 
+                        em algumas pessoas, a infecção pode se transformar em tuberculose ativa, em que as bactérias se 
+                        multiplicam e causam sintomas da doença. 
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo5.png" width="80" height="80" loading="lazy" alt="Air Transmission">
+                    </figure>
+      
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Transmissão secundária</h3>
+      
+                      <p class="item-text text">
+                        Se uma pessoa desenvolve tuberculose ativa, ela pode se tornar uma fonte secundária de infecção 
+                        e transmitir a doença para outras pessoas através da tosse, espirros, fala ou canto. Isso inicia 
+                        um novo ciclo da tuberculose, com outras pessoas sendo infectadas e podendo desenvolver infecção 
+                        latente ou tuberculose ativa.
+                      </p>
+                    </div>
+                  </li>
+      
+                  
+                </ul>
+      
+              </div>
+      
+            </div>
+          </section>
+    
+    
+    
+          <!-- 
+            - SINTOMAS (service)
+          -->
+    
+          <section class="section service has-bg-image" id="sintomas" style="background-image: url('./img/sintoma-tuberculose.png')"
+            aria-labelledby="service-label-1">
+            <div class="container">
+    
+              <h2 class="h2 section-title" id="service-label-1">Sintomas da tuberculose</h2>
+    
+              <p class="section-text text">
+                Confira abaixo alguns dos sintomas da doença:
+              </p>
+    
+              <ul class="service-list">
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 130; --height: 130;">
+                      <img src="./img/tosse.png" width="130" height="130" loading="lazy"
+                        alt="Tosse">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Tosse persistente</h3>
+    
+                      <p class="card-text text">
+                        A tosse contínua, que dura mais de duas semanas, é um dos sintomas mais comuns da doença.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/febre.png" width="110" height="110" loading="lazy"
+                        alt="Febre">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Febre</h3>
+    
+                      <p class="card-text text">
+                        Geralmente é de baixa intensidade, mas pode se tornar alta em casos mais graves.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/suores-noturnos.png" width="110" height="110" loading="lazy"
+                        alt="Suores noturnos">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Suores noturnos</h3>
+    
+                      <p class="card-text text">
+                        Quando ocorre de forma excessiva durante a noite, especialmente quando não está relacionada a outras condições.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/perda-de-peso.png" width="110" height="110" loading="lazy"
+                        alt="Perda de peso">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Perda de peso</h3>
+    
+                      <p class="card-text text">
+                        Alguns sintomas da tuberculose associados à perda de peso são a falta de apetite e a fraqueza geral.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/fraqueza.png" width="110" height="110" loading="lazy"
+                        alt="Fadiga">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Fadiga</h3>
+    
+                      <p class="card-text text">
+                        Uma sensação constante de cansaço, fraqueza e falta de energia.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/dor-no-peito.png" width="110" height="110" loading="lazy"
+                        alt="Dores no peito">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Dores no peito</h3>
+    
+                      <p class="card-text text">
+                        A dor pode ser agravada pela tosse ou respiração profunda.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+              </ul>
+    
+            </div>
+          </section>
+    
+    
+    
+    
+          <!-- 
+            - TRATAMENTO (about)
+          -->
+    
+          <section class="section about" id="tratamento" aria-labelledby="about-label-2">
+            <div class="container">
+    
+              <figure class="about-banner order-1">
+                <img src="./img/tratamento-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Tua Saúde </p>
+              </figure>
+    
+              <div class="about-content">
+    
+                <h2 class="h2 section-title">Tratamento</h2>
+    
+                <p class="section-text text">
+                </p>
+    
+                <ul class="about-list">
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/trat1.png" width="80" height="80" loading="lazy"
+                        alt="Wash Your Hands For 20sec">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title"></h3>
+    
+                      <p class="item-text text">
+                        É fundamental que o tratamento seja seguido conforme prescrito pelo médico, sem interrupções, 
+                        mesmo que os sintomas desapareçam ou melhorem antes do término do tratamento. 
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/trat2.png" width="80" height="80" loading="lazy"
+                        alt="Cover Nose and Mouth When Sneezing">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title"></h3>
+    
+                      <p class="item-text text">
+                        A interrupção prematura do tratamento pode levar a recidivas da doença, desenvolvimento 
+                        de resistência aos medicamentos e maior dificuldade no tratamento posterior.
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/trat3.png" width="80" height="80" loading="lazy"
+                        alt="Wear A Mask If Available">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title"></h3>
+    
+                      <p class="item-text text">
+                        O regime de tratamento padrão para a tuberculose é conhecido como tratamento diretamente 
+                        observado (DOTS) e envolve a combinação de diferentes medicamentos antituberculose.
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/trat4.png" width="80" height="80" loading="lazy"
+                        alt="Wear A Mask If Available">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title"></h3>
+    
+                      <p class="item-text text">
+                        A duração total do tratamento varia de acordo com a forma da doença e o contexto clínico, 
+                        geralmente durando de 6 a 9 meses. Durante a fase intensiva, que dura aproximadamente 2 
+                        meses, são administrados vários medicamentos combinados. Em seguida, na fase de continuação, 
+                        são utilizados medicamentos em menor quantidade por um período de tempo mais longo.
+                      </p>
+                    </div>
+                  </li>
+    
+                </ul>
+    
+              </div>
+    
+            </div>
+          </section>
+    
+    
+    
+    
+          <!-- 
+            - MEDIDAS PROFILÁTICAS (safety)
+          -->
+    
+          <section id="medidas" class="section safety" aria-labelledby="safety-label">
+            <div class="container">
+    
+              <h2 class="h2 section-title" id="safety-label">Medidas profiláticas</h2>
+    
+              <p class="section-text text">
+                A tuberculose ainda é uma doença que causa muitas mortes, principalmente em países de baixa e média renda, por isso, requer alguns cuidados. Algumas das medidas preventivas contra a tuberculose são:
+              </p>
+    
+              <ol class="safety-list">
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 190; --height: 190;">
+                    <img src="./img/vacina-bcg.png" width="170" height="170" loading="lazy" alt="Vacinação com BCG"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">1</span>
+    
+                  <h3 class="h4 item-title">Vacinação com BCG</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/lavar-mao.png" width="170" height="170" loading="lazy" alt="Lavar as mãos regularmente"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">2</span>
+    
+                  <h3 class="h4 item-title">Lavar as mãos regularmente</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/evitar-contato.png" width="170" height="190" loading="lazy"
+                      alt="Evitar contato próximo" class="img">
+                  </figure>
+    
+                  <span class="number">3</span>
+    
+                  <h3 class="h4 item-title">Evitar contato próximo com pessoas infectadas</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/cobrir-nariz.png" width="170" height="170" loading="lazy"
+                      alt="Cobrir a boca e o nariz" class="img">
+                  </figure>
+    
+                  <span class="number">4</span>
+    
+                  <h3 class="h4 item-title">Cobrir a boca e o nariz ao tossir ou espirrar</h3>
+                </li>
+    
+              </ol>
+    
+            </div>
+          </section>
+
+
+          <!--
+            REFERÊNCIAS
+          -->
+          <button id="ref" class="collapsible">Referências</button>
+          <div class="content1">
+              <div class="card-text text">
+                  <br>
+                  <p id="ref-par">CRUZ, Fundação Oswaldo. <strong>Tuberculose</strong>. Disponível em: https://portal.fiocruz.br/doenca/tuberculose. Acesso em: 29 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">NARDELL, Edward A.. <strong>Como a tuberculose se desenvolve?</strong> Disponível em: https://www.msdmanuals.com/pt-br/casa/infec%C3%A7%C3%B5es/tuberculose-e-infec%C3%A7%C3%B5es-relacionadas/tuberculose-tb#:~:text=A%20tuberculose%20%C3%A9%20uma%20infec%C3%A7%C3%A3o,qualquer%20%C3%B3rg%C3%A3o%20pode%20estar%20envolvido.. Acesso em: 28 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Biblioteca Virtual em. <strong>Dia Mundial de Combate à Tuberculose</strong>. Disponível em: https://bvsms.saude.gov.br/24-3-dia-mundial-de-combate-a-tuberculose/. Acesso em: 28 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Ministério da. <strong>Tuberculose</strong>. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose. Acesso em: 29 maio 2023.</p>
+              </div>
+          </div>
+
+          <br><br><br><br>
+
+
+      </article>
+    </main>
+
+
+
+
+    <!-- 
+    - #FOOTER-->
+ 
+
+    <footer class="footer has-bg-image" id="rodape">
+      <div>
+        <div class="footer-bottom">
+          <img class="logo" src="https://dados.ifrn.edu.br/base/images/logo-ifrn.png">
+        </div>
+  
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          <strong>Desenvolvido pelas alunas:</strong>
+          <br>Camile Joice Rocha do Nascimento;
+            <br> Emine Aissa Franco do Nascimento;
+            <br>Maria das Vitórias da Costa Araújo;
+            <br> Raissa Laura Plácido Justino.
+            <br>
+            <br>
+          <strong>Orientador:</strong> Álvaro Hermano da Silva.
+          <br>
+          <strong>Coorientador(a):</strong>Thayse Azevedo da Silva.
+        </p>
+      </div>
+  
+      </div>
+      <div style="text-align: center;"> &copy; 2023 IFRN- Campus Parnamirim.<br> </div>
+      <br><br>
+    </footer>
+  
+
+
+
+  
+  <script src="tuberculose.js"></script>
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+          });
+
+          $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+          });
+
+          $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+          });
+
+        });
+    </script>
+
+
+  
+</body>
+
+</html>

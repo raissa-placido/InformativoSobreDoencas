@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hanseníase</title>
+  <link href="hanseniase.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="./img/logotcc.png">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+</head>
+
+<body id=“top”>
+
+  <header class="cabecalho">
+    <div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="side-bar active">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="#intro"><i class="fas fa-desktop"></i>Introdução</a></div>
+          <div class="item"><a href="#agente"><i class="fas fa-notes-medical"></i>Agente etiológico</a></div>
+          <div class="item"><a href="#vetor"><i class="fas fa-syringe"></i>Vetor</a></div> <!--se tiver-->
+          <div class="item"><a href="#transmissao"><i class="fas fa-vial"></i>Transmissão</a></div>
+          <div class="item"><a href="#ciclo"><i class="fas fa-hospital"></i>Ciclo da doença</a></div>
+          <div class="item"><a href="#sintomas"><i class="fas fa-stethoscope"></i>Sintomas</a></div>
+          <div class="item"><a href="#tratamento"><i class="fas fa-capsules"></i>Tratamento</a></div>
+          <div class="item"><a href="#medidas"><i class="fas fa-thumbtack"></i>Medidas profiláticas</a></div>
+          
+          <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Homepage</a></div>
+          <div class="item"><a href="#"><i class="fas fa-microscope"></i>Microscópio virtual</a></div>
+          <div class="item"><a href="#"><i class="fas fa-chart-line"></i>Dados epidemiológicos</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="titulo-header">Hanseníase</p>
+    </div>
+
+    <div>
+      <button type="button" id="btnAumentar">A+</button>
+    </div>
+
+    <div>
+      <button type="button" id="btnDiminuir">A-</button>
+    </div>
+    
+    <div>
+      <input type="checkbox" name="change-theme" id="change-theme" />
+      <label for="change-theme">
+        <i class="bi bi-sun"></i>
+        <i class="bi bi-moon"></i
+      ></label>
+    </div>
+
+    
+  </header>
+
+
+  <!--CAPA-->
+  <div class="fundo">
+    <div class="header-content">
+      <h1>HANSENÍASE</h1>
+      <div class="line"></div>
+    </div>
+  </div>
+
+    <!-- LIBRAS -->
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+  
+
+
+  <main>
+      <article>
+        
+        
+    <!--INTRODUÇÃO-->
+    <section class="section about" id="intro" aria-labelledby="about-label-2">
+      <div class="container">
+
+        <figure class="about-banner order-1">
+          <img src="./img/intro.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100"> <br>
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Santa Casa de Curitiba </p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Bem vindos!</p>
+          <h2 class="h2 section-title">Conheça a hanseníase:</h2>
+          <div class="item-content">
+            <p class="item-text text">
+            A hanseníase, também conhecida como lepra, é uma bacteriose 
+            (doença infecciosa causada por uma bactéria) que afeta a pele 
+            e os nervos periféricos. De acordo com a Organização Mundial 
+            da Saúde (OMS), cerca de <strong>150 países</strong> apresentam casos da doença, 
+            com o Brasil em segundo lugar no número de casos novos.
+            </p>
+            <br>
+            <p class="item-text text">
+             O dia 30/01 é considerado o Dia Mundial Contra a Hanseníase e o 
+             primeiro mês do ano é denominado <strong>“Janeiro Roxo”</strong>, para aumentar a 
+             conscientização sobre a doença e defender a igualdade de tratamento 
+             para os infectados.
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+      
+    <!-- 
+      - #AGENTE ETIOLÓGICO
+    -->
+
+    <section class="section about" id="agente" aria-labelledby="about-label-1">
+      <div class="container">
+        
+
+        <figure class="about-banner">
+          <img src="./img/Mycobacterium_leprae.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100"> <br>
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Centers for Disease and Prevention </p>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Agente etiológico</p>
+          <h2 class="h2 section-title">Mycobacterium leprae</h2>
+
+          <p class="section-text text">
+            <strong>Reino:</strong>  Bacteria <br>
+            <strong>Filo:</strong> Actinobacteria <br>
+            <strong>Classe:</strong> Actinobacteria <br>
+            <strong>Ordem:</strong> Actinomycetales <br>
+            <strong>Família:</strong> Mycobacteriaceae <br>
+            <strong>Gênero:</strong> Mycobacterium <br>
+            <strong>Espécie:</strong> Mycobacterium leprae
+          </p>
+
+          <ul class="about-list">
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/descoberta.png" width="80" height="80" loading="lazy" alt="Descoberta">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Descoberta</h3>
+
+                <p class="item-text text">
+                  O médico norueguês Gerhard Armauer Hanser, em 1873, descobriu a bactéria ao observar bacilos em amostras de tecido de pacientes afetados pela doença.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/casos.png" width="80" height="80" loading="lazy" alt="Casos">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Casos</h3>
+
+                <p class="item-text text">
+                  Segundo a OMS, os países que apresentam a maior carga de casos notificados em nível global são Índia, Brasil e Indonésia.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/alemdisso.png" width="80" height="80" loading="lazy"
+                  alt="Além disso">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Além disso...</h3>
+
+                <p class="item-text text">
+                  A doença é mais comum em áreas com más condições de saneamento básico, superlotação e pobreza.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+<!--A doença não apresenta vetor!-->
+
+
+
+<!-- 
+            - TRANSMISSÃO (about)
+          -->
+    
+          <section class="section about" id="transmissao" aria-labelledby="about-label-2">
+            <div class="container">
+    
+              <figure class="about-banner order-1">
+                <img src="./img/transmissao-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> TV Brasil </p>
+              </figure>
+    
+              <div class="about-content">
+    
+                <h2 class="h2 section-title">Transmissão </h2>
+    
+                <p class="section-text text">
+                  Ocorre principalmente por meio do contato próximo e prolongado com uma pessoa infectada pela bactéria Mycobacterium leprae. A transmissão pode ocorrer por:
+                </p>
+    
+                <ul class="about-list">
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/transm1.png" width="80" height="80" loading="lazy"
+                        alt="Wash Your Hands For 20sec">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Gotículas respiratórias</h3>
+    
+                      <p class="item-text text">
+                        Quando a pessoa infectada com a doença fala, tosse ou espirra, as gotículas respiratórias que contêm a bactéria são liberadas no ar, 
+                        contaminando uma pessoa saudável que esteja com contato próximo.
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/transm2.png" width="80" height="80" loading="lazy"
+                        alt="Cover Nose and Mouth When Sneezing">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Contato direto</h3>
+    
+                      <p class="item-text text">
+                        A transmissão também pode ocorrer por meio do contato direto com a pele da pessoa infectada, porém é menos comum de acontecer, já que a 
+                        bactéria não sobrevive tanto tempo fora do corpo humano.
+                      </p>
+                    </div>
+                  </li>
+    
+                </ul>
+    
+              </div>
+    
+            </div>
+          </section>
+    
+    
+
+    
+    
+        <!-- 
+            - CICLO DA DOENÇA (about)
+          -->
+           <section class="section about" id="ciclo" aria-labelledby="about-label-1">
+              <div class="container">
+        
+                <figure class="about-banner">
+                    <img src="./img/ciclo-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                    class="w-100">
+                    <br>
+                    <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Unifesp </p>
+                </figure>
+
+                <div class="about-content">
+
+                    <h2 class="h2 section-title">Ciclo da doença</h2>
+
+                    <ul class="about-list">
+
+                        <li class="about-item">
+                          <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                            <img src="./img/ciclo1.png" width="80" height="80" loading="lazy"
+                            alt="Wash Your Hands For 20sec">
+                          </figure>
+    
+                          <div class="item-content">
+                            <h3 class="h4 item-title">Exposição</h3>
+    
+                            <p class="item-text text">
+                              Quando uma pessoa saudável entre em contato prolongado com uma pessoa com hanseníase, a contaminação pode ocorrer por 
+                              meio das gotículas de saliva ou pelo contato direto.
+                            </p>
+                          </div>
+                        </li>
+
+                        <li class="about-item">
+                          <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                            <img src="./img/ciclo2.png" width="80" height="80" loading="lazy"
+                              alt="Cover Nose and Mouth When Sneezing">
+                          </figure>
+          
+                          <div class="item-content">
+                            <h3 class="h4 item-title">Infecção primária</h3>
+          
+                            <p class="item-text text">
+                              A bactéria entra no corpo por meio das vias respiratórias superiores, se multiplica e se espalha dentro do corpo. 
+                            </p>
+                          </div>
+                        </li>
+
+                        <li class="about-item">
+                          <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                            <img src="./img/ciclo3.png" width="80" height="80" loading="lazy"
+                              alt="Wear A Mask If Available">
+                          </figure>
+          
+                          <div class="item-content">
+                            <h3 class="h4 item-title">Resposta imunológica</h3>
+          
+                            <p class="item-text text">
+                              O sistema imunológico da pessoa infectada tenta combater a infecção, mas a bactéria possui mecanismos que evitam ser 
+                              destruída pelas células de defesa. 
+                            </p>
+                          </div>
+                        </li>
+
+                        <li class="about-item">
+                          <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                            <img src="./img/ciclo4.png" width="80" height="80" loading="lazy"
+                              alt="Wear A Mask If Available">
+                          </figure>
+          
+                          <div class="item-content">
+                            <h3 class="h4 item-title">Manifestação</h3>
+          
+                            <p class="item-text text">
+                              A hanseníase pode se manifestar de forma gradual ao longo do tempo.
+                            </p>
+                          </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+              </div>
+            </section>
+
+    
+      
+    
+    
+    
+          <!-- 
+            - SINTOMAS (service)
+          -->
+    
+          <section class="section service has-bg-image" id="sintomas" style="background-image: url('./img/sintomas-hanseniase.png')"
+            aria-labelledby="service-label-1">
+            <div class="container">
+    
+              <h2 class="h2 section-title" id="service-label-1">Sintomas da hanseníase</h2>
+    
+              <p class="section-text text">
+                Os sintomas da hanseníase podem ser variados, confira alguns deles abaixo:
+              </p>
+    
+              <ul class="service-list">
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 130; --height: 130;">
+                      <img src="./img/lesoes-na-pele.png" width="130" height="130" loading="lazy"
+                        alt="Manchas na pele">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Manchas na pele</h3>
+    
+                      <p class="card-text text">
+                        Podem ser brancas ou avermelhadas. Essas manchas podem ser lisas, secas e sem sensibilidade.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/dormência.png" width="110" height="110" loading="lazy"
+                        alt="Dormência">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Dormência</h3>
+    
+                      <p class="card-text text">
+                        Também ocorre a diminuição da sensibilidade ao toque, calor ou dor nas áreas afetadas.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/fraqueza-muscular.png" width="110" height="110" loading="lazy"
+                        alt="Fraqueza muscular">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Fraqueza muscular</h3>
+    
+                      <p class="card-text text">
+                        Resultando em dificuldade para segurar objetos, realizar tarefas que exigem força.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/dor-na-articulacao.png" width="110" height="110" loading="lazy"
+                        alt="Dores">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Dores</h3>
+    
+                      <p class="card-text text">
+                        Alguns pacientes podem experimentar dor intensa nas regiões afetadas, nos músculos e nas articulações.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/sangramento-nasal.png" width="110" height="110" loading="lazy"
+                        alt="Alterações nas mucosas">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Alterações nas mucosas</h3>
+    
+                      <p class="card-text text">
+                        Congestão nasal, sangramento nasal, obstrução das vias aéreas superiores e alterações na voz.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/ulceras.png" width="110" height="110" loading="lazy"
+                        alt="Ulcerações">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Ulcerações</h3>
+    
+                      <p class="card-text text">
+                        As úlceras na pele acontecem nos casos mais graves da doença, nas áreas de maior taruma ou pressão.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+              </ul>
+    
+            </div>
+          </section>
+
+
+
+
+
+          <!-- 
+            - TRATAMENTO (about)
+          -->
+    
+          <section class="section about" id="tratamento" aria-labelledby="about-label-2">
+            <div class="container">
+    
+              <figure class="about-banner order-1">
+                <img src="./img/tratamento-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"> <strong>Fonte:</strong> Raiza Milhomem </p>
+              </figure>
+    
+              <div class="about-content">
+    
+                <h2 class="h2 section-title">Tratamento</h2>
+    
+                <p class="section-text text">
+                  
+                </p>
+    
+                <ul class="about-list">
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/trat1.png" width="80" height="80" loading="lazy"
+                        alt="Wash Your Hands For 20sec">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title"></h3>
+    
+                      <p class="item-text text">
+                        O tratamento da hanseníase envolve o uso de antibióticos, geralmente por um período prolongado de 6 a 12 meses ou mais, 
+                        dependendo do tipo e da gravidade da doença.
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/trat2.png" width="80" height="80" loading="lazy"
+                        alt="Cover Nose and Mouth When Sneezing">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title"></h3>
+    
+                      <p class="item-text text">
+                        É importante iniciar o tratamento o mais cedo possível, para evitar complicações e prevenir a transmissão da doença.
+                      </p>
+                    </div>
+                  </li>
+    
+                </ul>
+    
+              </div>
+    
+            </div>
+          </section>
+    
+    
+    
+    
+          
+    
+    
+          <!-- 
+            - MEDIDAS PROFILÁTICAS (safety)
+          -->
+    
+          <section id="medidas" class="section safety" aria-labelledby="safety-label">
+            <div class="container">
+    
+              <h2 class="h2 section-title" id="safety-label">Medidas profiláticas</h2>
+    
+              <p class="section-text text">
+                Os casos hanseníase foram reduzidos devido aos programas de controle, no entanto, ainda existem em muitas regiões. Portanto, algumas das medidas preventivas contra a hanseníase são:
+              </p>
+    
+              <ol class="safety-list">
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 190; --height: 190;">
+                    <img src="./img/diagnostico-precoce.png" width="170" height="170" loading="lazy" alt="Diagnóstico precoce"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">1</span>
+    
+                  <h3 class="h4 item-title">Diagnóstico precoce</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/vacina-bcg.png" width="170" height="170" loading="lazy" alt="Vacinação com a BCG"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">2</span>
+    
+                  <h3 class="h4 item-title">Vacinação com a BCG</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/tratamento-adequado.png" width="170" height="190" loading="lazy"
+                      alt="Tratamento adequado" class="img">
+                  </figure>
+    
+                  <span class="number">3</span>
+    
+                  <h3 class="h4 item-title">Tratamento adequado</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/promover-conscientizacao.png" width="170" height="170" loading="lazy"
+                      alt="Promover a conscientização" class="img">
+                  </figure>
+    
+                  <span class="number">4</span>
+    
+                  <h3 class="h4 item-title">Promover a conscientização</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/melhorar-condicao.png" width="170" height="170" loading="lazy"
+                      alt="Melhorar condições de vida" class="img">
+                  </figure>
+    
+                  <span class="number">5</span>
+    
+                  <h3 class="h4 item-title">Melhorar condições de vida</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/melhorar-saneamento-básico.png" width="170" height="170" loading="lazy"
+                      alt="Melhorar saneamento básico" class="img">
+                  </figure>
+    
+                  <span class="number">6</span>
+    
+                  <h3 class="h4 item-title">Melhorar saneamento básico</h3>
+                </li>
+    
+              </ol>
+    
+            </div>
+          </section>
+    
+
+          <!--
+            REFERÊNCIAS
+          -->
+          <button id="ref" class="collapsible">Referências</button>
+          <div class="content1">
+              <div class="card-text text">
+                  <br>
+                  <p id="ref-par">DERMATOLOGIA, Sociedade Brasileira de. <strong>Hanseníase</strong>. Disponível em: https://www.sbd-sp.org.br/geral/hanseniase-brasil-e-o-segundo-pais-com-maior-numero-de-casos-no-mundo-atras-da-india-apesar-disso-se-descoberta-precocemente-mais-cedo-e-a-cura/#:~:text=De%20acordo%20com%20a%20Organiza%C3%A7%C3%A3o,a%20cada%20100%20mil%20habitantes. Acesso em: 28 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">PARANÁ, Secretaria de Saúde do. <strong>Hanseníase</strong>. Disponível em: https://www.saude.pr.gov.br/Pagina/Hanseniase#:~:text=A%20hansen%C3%ADase%20%C3%A9%20uma%20doen%C3%A7a,e%20pode%20gerar%20incapacidades%20permanentes.. Acesso em: 29 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Biblioteca Virtual em. <strong>Dia Mundial Contra a Hanseníase e Dia Nacional de Combate e Prevenção da Hanseníase</strong>. Disponível em: https://bvsms.saude.gov.br/30-01-dia-mundial-contra-a-hanseniase-e-dia-nacional-de-combate-e-prevencao-da-hanseniase/. Acesso em: 29 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">SAÚDE, Ministério da. <strong>Hanseníase</strong>. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hanseniase. Acesso em: 29 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">SIRAIAMA, Bruno. <strong>Seminário Microbiologia - Mycobacterium leprae</strong>. Disponível em: https://edisciplinas.usp.br/pluginfile.php/5821886/mod_resource/content/1/%20Mycobacterium%20Leprae.pdf. Acesso em: 29 maio 2023.</p>
+              </div>
+          </div>
+
+          <br><br><br><br>
+
+    </article>
+    </main>
+
+
+
+    <!-- 
+    - #FOOTER-->
+ 
+
+    <footer class="footer has-bg-image" id="rodape">
+      <div>
+        <div class="footer-bottom">
+          <img class="logo" src="https://dados.ifrn.edu.br/base/images/logo-ifrn.png">
+        </div>
+  
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          <strong>Desenvolvido pelas alunas:</strong>
+          <br>Camile Joice Rocha do Nascimento;
+            <br> Emine Aissa Franco do Nascimento;
+            <br>Maria das Vitórias da Costa Araújo;
+            <br> Raissa Laura Plácido Justino.
+            <br>
+            <br>
+          <strong>Orientador:</strong> Álvaro Hermano da Silva.
+          <br>
+          <strong>Coorientador(a):</strong>Thayse Azevedo da Silva.
+        </p>
+      </div>
+  
+      </div>
+      <div style="text-align: center;"> &copy; 2023 IFRN- Campus Parnamirim.<br> </div>
+      <br><br>
+    </footer>
+  
+
+  
+  <script src="hanseniase.js"></script>
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+          });
+
+          $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+          });
+
+          $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+          });
+
+        });
+    </script>
+
+
+  
+</body>
+
+</html>
+

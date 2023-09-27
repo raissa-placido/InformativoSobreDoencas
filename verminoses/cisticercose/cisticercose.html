@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cisticercose</title>
+  <link href="cisticercose.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="./img/logotcc.png">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+</head>
+
+<body id=“top”>
+
+  <header class="cabecalho">
+    <div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="side-bar active">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="#intro"><i class="fas fa-desktop"></i>Introdução</a></div>
+          <div class="item"><a href="#agente"><i class="fas fa-notes-medical"></i>Agente etiológico</a></div>
+          <div class="item"><a href="#vetor"><i class="fas fa-syringe"></i>Vetor</a></div> <!--se tiver-->
+          <div class="item"><a href="#transmissao"><i class="fas fa-vial"></i>Transmissão</a></div>
+          <div class="item"><a href="#ciclo"><i class="fas fa-hospital"></i>Ciclo da doença</a></div>
+          <div class="item"><a href="#sintomas"><i class="fas fa-stethoscope"></i>Sintomas</a></div>
+          <div class="item"><a href="#tratamento"><i class="fas fa-capsules"></i>Tratamento</a></div>
+          <div class="item"><a href="#medidas"><i class="fas fa-thumbtack"></i>Medidas profiláticas</a></div>
+          
+          <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Homepage</a></div>
+          <div class="item"><a href="#"><i class="fas fa-microscope"></i>Microscópio virtual</a></div>
+          <div class="item"><a href="#"><i class="fas fa-chart-line"></i>Dados epidemiológicos</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="titulo-header">Cisticercose</p>
+    </div>
+
+    <div>
+      <button type="button" id="btnAumentar">A+</button>
+    </div>
+
+    <div>
+      <button type="button" id="btnDiminuir">A-</button>
+    </div>
+    
+    <div>
+      <input type="checkbox" name="change-theme" id="change-theme" />
+      <label for="change-theme">
+        <i class="bi bi-sun"></i>
+        <i class="bi bi-moon"></i
+      ></label>
+    </div>
+  </header>
+
+
+
+    <!--CAPA-->
+    <div class="fundo">
+        <div class="header-content">
+          <h1>CISTICERCOSE</h1>
+          <div class="line"></div>
+        </div>
+    </div>
+
+
+      <!-- LIBRAS -->
+
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+
+
+  
+
+
+  <main>
+      <article>
+        
+        
+    <!--INTRODUÇÃO-->
+    <section class="section about" id="intro" aria-labelledby="about-label-2">
+      <div class="container">
+
+        <figure class="about-banner order-1">
+          <img src="./img/intro.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100">
+            <br>
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> NeuroSapiens</p>        
+          </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Bem vindos!</p>
+          <h2 class="h2 section-title">Conheça a cisticercose:</h2>
+          <div class="item-content">
+            <h3 class="h4 item-title"></h3>
+
+            <p class="item-text text">
+            A cisticercose, também considerada uma verminose, é uma doença causada por um verme 
+            parasita que causa a teníase. Considera-se cisticercose quando, durante o ciclo, os 
+            hospedeiros intermediários ou definitivos  ingerem os ovos do parasita e desenvolvem 
+            cisticercose em seus tecidos.
+            </p>
+            <br>
+            <p class="item-text text">
+             Nos humanos, os cistos aparecem com mais frequência no sistema nervoso central, e 
+             por isso a doença é considerada uma das infecções mais graves. Pode atingir os países 
+             da <strong>Ásia, África, América Central e do Sul e Austrália</strong>.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- 
+      - #AGENTE ETIOLÓGICO
+    -->
+
+    <section class="section about" id="agente" aria-labelledby="about-label-1">
+      <div class="container">
+        
+
+        <figure class="about-banner">
+          <img src="./img/solium2.png" width="540" height="540" loading="lazy" alt="about banner"
+            class="w-100">
+            <br>
+            <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Mundo Educação</p>        
+          </figure>
+
+        <div class="about-content">
+
+          <p class="about-subtitle" id="about-label-1">Agente etiológico</p>
+          <h2 class="h2 section-title">Taenia Solium</h2>
+
+          <p class="section-text text">
+            <strong>Reino:</strong> Animalia <br>
+            <strong>Filo:</strong> Platyhelminthes <br>
+            <strong>Classe:</strong> Cestoda <br>
+            <strong>Ordem:</strong> Cyclophyllidea <br>
+            <strong>Família:</strong> Taeniidae <br>
+            <strong>Gênero:</strong> Taenia <br>
+            <strong>Espécie:</strong> Taenia solium
+
+          </p>
+
+          <ul class="about-list">
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/ciclo.png" width="80" height="80" loading="lazy" alt="Ciclo de vida">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Ciclo de vida</h3>
+
+                <p class="item-text text">
+                  Apresenta 3 estágios de desenvolvimento: ovos, cisticerco e verme adulto. O ciclo de vida depende da ingestão da carne 
+                  crua ou mal cozida, do porco, contendo cisticercos.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/sobre1.png" width="80" height="80" loading="lazy" alt="Sobre o agente">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Sobre o agente:</h3>
+
+                <p class="item-text text">
+                  A tênia dos porcos é um verme intestinal que pode atingir até 10 metros de comprimento no corpo humano; também é conhecida
+                  como solitária.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-item">
+              <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                <img src="./img/alemdisso1.png" width="80" height="80" loading="lazy"
+                  alt="Além disso">
+              </figure>
+
+              <div class="item-content">
+                <h3 class="h4 item-title">Além disso...</h3>
+
+                <p class="item-text text">
+                  Apresenta o homem como hospedeiro definitivo e o porco como hospedeiro intermediário.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+        <!--
+                VETOR DA DOENÇA
+            -->
+
+            <section class="section about" id="vetor" aria-labelledby="about-label-2">
+              <div class="container">
+      
+                <figure class="about-banner order-1">
+                  <img src="./img/vetor1-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                    class="w-100">
+                    <br>
+                    <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> iStock</p>                
+                </figure>
+      
+                <div class="about-content">
+      
+                  <p class="about-subtitle" id="about-label-1">Vetor da doença</p>
+                  <h2 class="h2 section-title">Porco</h2>
+      
+                  <p class="section-text text">
+                    
+                  </p>
+      
+                  <ul class="about-list">
+      
+                    <li class="about-item">
+                      <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                        <img src="./img/vetor1.png" width="80" height="80" loading="lazy"
+                          alt="Porco">
+                      </figure>
+      
+                      <div class="item-content">
+                        <h3 class="h4 item-title">Sobre ele:</h3>
+      
+                        <p class="item-text text">
+                          O porco é o principal hospedeiro intermediário da Taenia solium. 
+                          Os porcos se infectam ao consumir alimentos ou água contaminados 
+                          com os ovos do parasita. As larvas se alojam principalmente nos 
+                          músculos, formando cisticercos, que são bolsas cheias de líquido 
+                          contendo a larva.
+                        </p>
+                      </div>
+                    </li>
+      
+                    
+      
+                  </ul>
+      
+                </div>
+      
+              </div>
+            </section>
+
+
+
+          
+
+
+
+        <!-- 
+            - TRANSMISSÃO
+          -->
+          <section class="section about" id="transmissao" aria-labelledby="about-label-1">
+            <div class="container">
+      
+              <figure class="about-banner">
+                  <img src="./img/transmissao-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Unicamp</p>              
+                </figure>
+
+              <div class="about-content">
+
+                  <h2 class="h2 section-title">Transmissão</h2>
+
+                  <p class="section-text text">
+                    Pode ocorrer das seguintes formas:
+                  </p>
+
+                  <ul class="about-list">
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/transm1.png" width="80" height="80" loading="lazy"
+                          alt="Transmissão fecal-oral">
+                        </figure>
+  
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Transmissão fecal-oral</h3>
+  
+                          <p class="item-text text">
+                            Ocorre quando o ser humano ingere os ovos da Taenia solium presentes em alimentos ou água 
+                            contaminados pelas fezes de uma pessoa infectada. Isso acontece por meio da falta de 
+                            saneamento básico adequado, má higiene, consumo de alimentos crus ou mal cozidos ou ingestão
+                            de água não tratada.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/transm2.png" width="80" height="80" loading="lazy"
+                            alt="Autoinfecção">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Autoinfecção</h3>
+        
+                          <p class="item-text text">
+                            Acontece quando os ovos eliminados nas fezes da pessoa infectada são ingeridos por 
+                            ela mesma. Isso pode ocorrer se a pessoa não seguir medidas de higiene adequadas, como lavar as 
+                            mãos após usar o banheiro, pois pode levar os ovos do parasita para a boca, acidentalmente.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/transm3.png" width="80" height="80" loading="lazy"
+                            alt="De forma direta">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title">De forma direta</h3>
+        
+                          <p class="item-text text">
+                            Por meio do consumo de carne de porco crua ou mal cozida que contenha cisticercos (larvas) da Taenia solium.
+                          </p>
+                        </div>
+                      </li>
+
+                  </ul>
+
+              </div>
+
+            </div>
+          </section>
+    
+
+
+
+         <!-- 
+            - CICLO DA DOENÇA - parte 1
+          -->
+    
+          <section class="section about" id="ciclo" aria-labelledby="about-label-2">
+            <div class="container">
+    
+              <figure class="about-banner order-1">
+                <img src="./img/ciclo-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> UFRGS</p>
+              </figure>
+    
+              <div class="about-content">
+    
+                <h2 class="h2 section-title">Ciclo da doença - Parte 1</h2>
+    
+                <p class="section-text text">
+                  
+                </p>
+    
+                <ul class="about-list">
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo1.png" width="80" height="80" loading="lazy"
+                        alt="Fase do parasita adulto">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title">Fase do parasita adulto</h3>
+    
+                      <p class="item-text text">
+                        Quando há a ingestão da carne de porco, seja crua ou mal cozida, que esteja 
+                        contaminada com as larvas da Taenia solium, que são chamadas de cisticercos, 
+                        essas larvas vão se fixar no intestino humano. 
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo2.png" width="80" height="80" loading="lazy"
+                        alt="Vermes adultos">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title"></h3>
+    
+                      <p class="item-text text">
+                        Na parede intestinal, os cisticercos vão se desenvolver, virando vermes adultos, 
+                        conhecidos como tênias, que são parasitas hermafroditas, ou seja, possuem órgãos 
+                        reprodutores tanto masculinos quanto femininos.
+                      </p>
+                    </div>
+                  </li>
+    
+                  <li class="about-item">
+                    <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                      <img src="./img/ciclo3.png" width="80" height="80" loading="lazy"
+                        alt="Ovos da tênia">
+                    </figure>
+    
+                    <div class="item-content">
+                      <h3 class="h4 item-title"></h3>
+    
+                      <p class="item-text text">
+                        As tênias produzem proglotes grávidas, que são segmentos do corpo que estão 
+                        cheios de ovos. Esses proglotes grávidas se soltam do verme e são eliminados 
+                        nas fezes. 
+                      </p>
+                    </div>
+                  </li>
+    
+                </ul>
+    
+              </div>
+    
+            </div>
+          </section>
+    
+    
+    
+    
+          <!-- 
+            - CICLO DA DOENÇA - parte 2
+          -->
+          <section class="section about" aria-labelledby="about-label-1">
+            <div class="container">
+      
+              <figure class="about-banner">
+                  <img src="./img/ciclo2-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                  class="w-100">
+                  <br>
+                  <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> Amato - Instituto de Medicina Avançada</p>              
+                </figure>
+
+              <div class="about-content">
+
+                  <h2 class="h2 section-title">Ciclo da doença - Parte 2</h2>
+
+                  <p class="section-text text">
+                     
+                  </p>
+
+                  <ul class="about-list">
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo4.png" width="80" height="80" loading="lazy"
+                          alt="Fase da larva">
+                        </figure>
+  
+                        <div class="item-content">
+                          <h3 class="h4 item-title">Fase da larva</h3>
+  
+                          <p class="item-text text">
+                            Os ovos da Taenia solium são eliminados nas fezes humanas e podem contaminar o 
+                            ambiente. Quando os ovos são ingeridos pelos porcos, eles podem se desenvolver em 
+                            larvas (chamadas de cisticercos), que vão ficar localizadas nos tecidos musculares 
+                            ou em outros órgãos do animal. 
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo5.png" width="80" height="80" loading="lazy"
+                            alt="Consumo de carne crua">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title"></h3>
+        
+                          <p class="item-text text">
+                            As pessoas se infectam ao consumir carne de porco mal cozida ou crua que contenha 
+                            cisticercos. No intestino humano, os cisticercos se fixam à parede intestinal e 
+                            liberam as larvas, reiniciando o ciclo da doença.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="about-item">
+                        <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                          <img src="./img/ciclo6.png" width="80" height="80" loading="lazy"
+                            alt="Migração das larvas">
+                        </figure>
+        
+                        <div class="item-content">
+                          <h3 class="h4 item-title"></h3>
+        
+                          <p class="item-text text">
+                            Essas larvas podem migrar para outras partes do corpo humano, como músculos, 
+                            cérebro, olhos e outros tecidos, e podem causar diversas complicações. 
+                          </p>
+                        </div>
+                      </li>
+
+                  </ul>
+
+              </div>
+
+            </div>
+          </section>
+
+
+
+    
+    
+    
+          <!-- 
+            - SINTOMAS (service)
+          -->
+    
+          <section class="section service has-bg-image" style="background-image: url('./img/sintoma-cisticercose.png')"
+            aria-labelledby="service-label-1">
+            <div class="container">
+    
+              <h2 class="h2 section-title" id="service-label-1">Sintomas da cisticercose</h2>
+    
+              <p class="section-text text">
+                Conheça alguns dos sintomas causados pela cisticercose:
+              </p>
+    
+              <ul class="service-list">
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 130; --height: 130;">
+                      <img src="./img/desorientacao.png" width="130" height="130" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Sintomas neurológicos</h3>
+    
+                      <p class="card-text text">
+                        Como dores de cabeça intensas, convulsões, tontura e confusão mental.  
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/visao-turva.png" width="110" height="110" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Problemas de visão</h3>
+    
+                      <p class="card-text text">
+                        Como visão turva, perda de visão ou manchas no campo visual.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/sintoma-muscular.png" width="110" height="110" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Sintomas musculares</h3>
+    
+                      <p class="card-text text">
+                        Como dor muscular, fraqueza muscular e nódulos palpáveis sob a pele.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/problemas-visao.png" width="110" height="110" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Sintomas oculares</h3>
+    
+                      <p class="card-text text">
+                        Como inflamação ocular, dor ocular, visão prejudicada e descolamento da retina.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/hidrocefalia.png" width="110" height="110" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Hidrocefalia</h3>
+    
+                      <p class="card-text text">
+                        Em casos mais graves, há o acúmulo de líquido no cérebro.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="service-card">
+    
+                    <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                      <img src="./img/vomito.png" width="110" height="110" loading="lazy"
+                        alt="service image">
+                    </figure>
+    
+                    <div class="card-content">
+                      <h3 class="h4 card-title">Outros sintomas</h3>
+    
+                      <p class="card-text text">
+                        Náuseas, vômitos, perda de apetite e perda de peso inexplicada.
+                      </p>
+                    </div>
+    
+                  </div>
+                </li>
+    
+              </ul>
+    
+            </div>
+          </section>
+
+
+
+
+
+
+          <!--
+                TRATAMENTO
+            -->
+
+            <section class="section about" id="tratamento" aria-labelledby="about-label-2">
+              <div class="container">
+      
+                <figure class="about-banner order-1">
+                  <img src="./img/tratamento-principal.png" width="540" height="540" loading="lazy" alt="about banner"
+                    class="w-100">
+                    <br>
+                    <p class="about-subtitle" id="about-label-1"><strong>Fonte:</strong> ESIC Medical College/Divulgação</p>                
+                  </figure>
+      
+                <div class="about-content">
+      
+                  <h2 class="h2 section-title">Tratamento</h2>
+      
+                  <p class="section-text text">
+                    Antes de tudo, é necessário realizar o diagnóstico correto da cisticercose, 
+                    para que o tratamento inicie. Esse diagnóstico pode envolver exames clínicos, 
+                    histórico médico, exames de imagem e análise de amostras de sangue.
+
+                  </p>
+      
+                  <ul class="about-list">
+      
+                    <li class="about-item">
+                      <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                        <img src="./img/trat1.png" width="80" height="80" loading="lazy"
+                          alt="Medicamentos">
+                      </figure>
+      
+                      <div class="item-content">
+                        <h3 class="h4 item-title">Medicamentos</h3>
+      
+                        <p class="item-text text">
+                          O medicamento mais comumente utilizado é o praziquantel, que é eficaz 
+                          no tratamento da infecção tecidual.
+                        </p>
+                      </div>
+                    </li>
+      
+                    <li class="about-item">
+                      <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                        <img src="./img/trat2.png" width="80" height="80" loading="lazy"
+                          alt="Tratamento sintomático">
+                      </figure>
+      
+                      <div class="item-content">
+                        <h3 class="h4 item-title">Tratamento sintomático</h3>
+      
+                        <p class="item-text text">
+                          Em alguns casos, o tratamento pode incluir medicamentos para aliviar 
+                          os sintomas associados à doença. Por exemplo: analgésicos, corticóides 
+                          e medicamentos anticonvulsivantes.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="about-item">
+                      <figure class="item-img img-holder" style="--width: 80; --height: 80;">
+                        <img src="./img/trat3.png" width="80" height="80" loading="lazy"
+                          alt="Tratamento cirúrgico">
+                      </figure>
+      
+                      <div class="item-content">
+                        <h3 class="h4 item-title">Tratamento cirúrgico</h3>
+      
+                        <p class="item-text text">
+                          Em casos mais graves, em que as larvas da cisticercose estão localizadas 
+                          em áreas sensíveis, a cirurgia pode ser necessária. Isso inclui a remoção 
+                          das larvas ou a drenagem de cistos para aliviar a pressão em órgãos vitais, 
+                          como o cérebro.
+                        </p>
+                      </div>
+                    </li>
+      
+                  </ul>
+      
+                </div>
+      
+              </div>
+            </section>
+    
+    
+
+    
+    
+    
+    
+          <!-- 
+            - MEDIDAS PROFILÁTICAS (safety)
+          -->
+    
+          <section id="medidas" class="section safety" aria-labelledby="safety-label">
+            <div class="container">
+    
+              <h2 class="h2 section-title" id="safety-label">Medidas profiláticas</h2>
+    
+              <p class="section-text text">
+                É importante ressaltar que as estratégias para o controle da doença dependem de 
+                muitos fatores, como as condições econômicas, sociais e culturais. Portanto, 
+                saiba algumas medidas preventivas da cisticercose:
+              </p>
+    
+              <ol class="safety-list">
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 190; --height: 190;">
+                    <img src="./img/antes-de-comer.png" width="170" height="170" loading="lazy" alt="Lavar as mãos antes das refeições"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">1</span>
+    
+                  <h3 class="h4 item-title">Lavar as mãos antes das refeições</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/lavar-mao.png" width="170" height="170" loading="lazy" alt="Lavar as mãos após usar o banheiro"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">2</span>
+    
+                  <h3 class="h4 item-title">Lavar as mãos após usar o banheiro</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/agua-nao-tratada.png" width="170" height="190" loading="lazy"
+                      alt="Evite beber água de fontes desconhecidas" class="img">
+                  </figure>
+    
+                  <span class="number">3</span>
+    
+                  <h3 class="h4 item-title">Evite beber água de fontes desconhecidas</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/carne-crua.png" width="170" height="170" loading="lazy"
+                      alt="Evite comer carne crua" class="img">
+                  </figure>
+    
+                  <span class="number">4</span>
+    
+                  <h3 class="h4 item-title">Evite comer carne crua ou mal cozida</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/melhorar-sanemento básico.png" width="170" height="170" loading="lazy"
+                      alt="Promover saneamento básico" class="img">
+                  </figure>
+    
+                  <span class="number">5</span>
+    
+                  <h3 class="h4 item-title">Promover saneamento básico</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/alimentos-higienizados.png" width="170" height="170" loading="lazy"
+                      alt="Higienizar alimentos" class="img">
+                  </figure>
+    
+                  <span class="number">6</span>
+    
+                  <h3 class="h4 item-title">Certifique-se de os alimentos que você consome estejam cozidos e higienizados</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/antiparasitario.png" width="170" height="170" loading="lazy" alt="Realizar tratamentos antiparasitários"
+                      class="img">
+                  </figure>
+    
+                  <span class="number">7</span>
+    
+                  <h3 class="h4 item-title">Realizar tratamentos antiparasitários em animais que podem transmitir a doença</h3>
+                </li>
+    
+                <li class="safety-item">
+                  <figure class="item-banner img-holder" style="--width: 170; --height: 170;">
+                    <img src="./img/promover-conscientizacao.png" width="170" height="170" loading="lazy"
+                      alt="Promover a conscientização sobre a doença" class="img">
+                  </figure>
+    
+                  <span class="number">8</span>
+    
+                  <h3 class="h4 item-title">Promover a conscientização sobre a doença</h3>
+                </li>
+    
+              </ol>
+    
+            </div>
+          </section>
+
+
+
+
+          <!--
+            REFERÊNCIAS
+          -->
+          <button id="ref" class="collapsible">Referências</button>
+          <div class="content1">
+              <div class="card-text text">
+                  <br>
+                  <p id="ref-par">GREENLEE, John E.. <strong>Infecções parasitárias no cérebro</strong>. Disponível em: https://www.msdmanuals.com/pt-br/casa/dist%C3%BArbios-cerebrais,-da-medula-espinal-e-dos-nervos/infec%C3%A7%C3%B5es-no-c%C3%A9rebro/infec%C3%A7%C3%B5es-parasit%C3%A1rias-no-c%C3%A9rebro?query=CISTICERCOSE. Acesso em: 18 maio 2023.</p>
+                  <br>
+                  <p id="ref-par">VARELLA, Drauzio. <strong>Verminoses</strong>. Disponível em: https://drauziovarella.uol.com.br/doencas-e-sintomas/verminoses/amp/. Acesso em: 12 maio 2023.</p>
+              </div>
+          </div>
+
+    
+          <br><br><br><br>
+
+    </article>
+    </main>
+
+
+
+     <!-- 
+    - #FOOTER-->
+ 
+
+    <footer class="footer has-bg-image" id="rodape">
+      <div>
+        <div class="footer-bottom">
+          <img class="logo" src="https://dados.ifrn.edu.br/base/images/logo-ifrn.png">
+        </div>
+  
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          <strong>Desenvolvido pelas alunas:</strong>
+          <br>Camile Joice Rocha do Nascimento;
+            <br> Emine Aissa Franco do Nascimento;
+            <br>Maria das Vitórias da Costa Araújo;
+            <br> Raissa Laura Plácido Justino.
+            <br>
+            <br>
+          <strong>Orientador:</strong> Álvaro Hermano da Silva.
+          <br>
+          <strong>Coorientador(a):</strong>Thayse Azevedo da Silva.
+        </p>
+      </div>
+  
+      </div>
+      <div style="text-align: center;"> &copy; 2023 IFRN- Campus Parnamirim.<br> </div>
+      <br><br>
+    </footer>
+
+  
+  
+  <script src="cisticercose.js"></script>
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+          });
+
+          $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+          });
+
+          $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+          });
+
+        });
+    </script>
+
+
+  
+</body>
+
+</html>
