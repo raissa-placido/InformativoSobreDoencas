@@ -96,5 +96,57 @@ scrollReveal();
 addEventOnElem(window, "scroll", scrollReveal);
 
 
+//Modo noturno
+const changeThemeBtn = document.querySelector("#change-theme");
 
+// Toggle dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
+
+// Load light or dark mode
+function loadTheme() {
+  const darkMode = localStorage.getItem("dark");
+
+  if (darkMode) {
+    toggleDarkMode();
+  }
+}
+
+loadTheme();
+
+changeThemeBtn.addEventListener("change", function () {
+  toggleDarkMode();
+
+  // Save or remove dark mode from localStorage
+  localStorage.removeItem("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("dark", 1);
+  }
+});
  
+var $btnAumentar = $("#btnAumentar");
+var $btnDiminuir = $("#btnDiminuir");
+var $elemento = $("body").find("*"); //encontra todos os elementos dentro do #content
+var fonts = [];
+
+function obterTamanhoFonte() {
+  for (var i = 0; i < $elemento.length; i++) {
+    fonts.push(parseFloat($elemento.eq(i).css('font-size')));
+  }
+}
+obterTamanhoFonte();
+$btnAumentar.on('click', function() {
+  for (var i = 0; i < $elemento.length; i++) {
+    ++fonts[i];
+    $elemento.eq(i).css('font-size', fonts[i]);
+  }
+});
+
+$btnDiminuir.on('click', function() {
+  for (var i = 0; i < $elemento.length; i++) {
+    --fonts[i];
+    $elemento.eq(i).css('font-size', fonts[i]);
+  }
+});

@@ -10,8 +10,255 @@
 	--italic-font: "EB Garamond", serif;
 }*/
 
+* {
+  font-family: Helvetica;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+footer {
+  background-color: #a72c0a;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  
+}
+
+.footer-top {
+  display: grid;
+  gap: 60px;
+}
+
+.footer-list-title,
+.footer-text {
+  margin-block-end: 15px;
+}
+
+.contact-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
+
+.contact-item:not(:last-child) {
+  margin-block-end: 15px;
+}
+
+.contact-title {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+}
+
+.footer-list-item {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+  margin-block-start: 15px;
+}
+
+.footer-list:not(.social-list) ion-icon {
+  font-size: 14px;
+}
+
+.footer-bottom {
+  padding-block: 35px;
+ /* text-align: center;
+  border-block-start: 1px solid var(--cultured_20);*/
+}
+
+.side-bar{
+  background:white;
+  backdrop-filter:blur(15px);
+  width: 290px;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left: -100%;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  transition-property: left;
+  z-index: 6;
+}
+
+.side-bar.active{
+  left: 0;
+}
+
+.side-bar .menu{
+  width: 100%;
+  margin-top: 80px;
+}
+
+.side-bar .menu .item{
+  position:relative;
+  cursor:pointer;
+}
+
+.side-bar .menu .item a{
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 60px;
+}
+
+.side-bar .menu .item a:hover{
+  background: rgb(236, 150, 150);
+  transition: 0.3s ease;
+
+}
+
+.side-bar .menu .item i{
+  margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+
+  position: absolute;
+  right:0;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+  background: rgba(255,255,255 , 0.1);
+  display:none;
+}
+
+.side-bar .menu .item .sub-menu a{
+  padding-left: 80px;
+}
+
+.rotate{
+  transform: rotate(90deg);
+}
+
+.close-btn{
+  position: absolute;
+  color: #000000;
+  font-size: 20px;
+  right: 0;
+  margin: 25px;
+  cursor: pointer;
+}
+
+/*SOBRE A FONTE (A+ E A-)*/
+.titulo-header{
+  font-size: 20px;
+}
+
+#btnAumentar{
+  color: #fff;
+  font-size: 30PX;
+}
+
+#btnDiminuir{
+  color: #fff;
+}
 
 
+
+
+/* MODO NOTURNO */
+.dark {
+  background-color: #263238;
+  color: #fff;
+}
+
+.dark header{
+  background-color: #171e21;
+  color: #fff;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.bi {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.bi-moon {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #810303;
+  box-shadow: 0.5px 0.5px 10px 0.5px #000;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  z-index: 7;
+}
+
+
+.dark main{
+  background-color: #263238;
+}
+
+.dark .about-subtitle{
+  color: #eca2a2;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark #title{
+  color: #ff0202;}
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .menu-btn {
+  color: #fff;
+}
+
+.dark .close-btn{
+  color: #fff;
+}
+
+.dark .side-bar{
+  background-color: #5f5f5f;
+}
+
+.dark .side-bar .menu .item a:hover{
+  background-color: #353535;
+}
+
+.dark .side-bar .menu .item a{
+  color: #fff;
+}
+
+.dark footer{
+  background-color: #171e21;
+}
+
+
+
+
+.menu-btn{
+  position: fixed;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 25px;
+  cursor:pointer;
+  z-index: 6;
+}
 
 :root{
     --hoockers-green_20: hsl(148, 20%, 38%, 0.2);
